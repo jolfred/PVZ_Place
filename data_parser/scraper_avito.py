@@ -1,9 +1,10 @@
 import os
 import time
 import random
-import xml.etree.ElementTree as ET
 import csv
+from collections import defaultdict
 from urllib.parse import urljoin
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -16,22 +17,22 @@ from bs4 import BeautifulSoup
 
 class AvitoParser:
     def __init__(self, base_url, output_dir="output", headless=False):
-        print(f"Initializing parser for {base_url}")
+        print(f"Инициализация парсера для {base_url}")
         self.base_url = base_url
         self.output_dir = output_dir
         self.driver = self._init_driver(headless)
         self.parsed_ads = set()
         os.makedirs(output_dir, exist_ok=True)
-        print(f"Output directory: {os.path.abspath(output_dir)}")
+        print(f"Выходная директория: {os.path.abspath(output_dir)}")
 
     def _init_driver(self, headless):
-        """Initialize ChromeDriver with anti-detection settings"""
+        """Инициализация ChromeDriver с настройками против обнаружения"""
         chrome_options = Options()
 
         if headless:
             chrome_options.add_argument("--headless=new")
 
-        # Anti-detection settings
+        # Настройки против обнаружения
         chrome_options.add_argument("--disable-blink-features=AutomationControlled")
         chrome_options.add_argument("--start-maximized")
         chrome_options.add_argument("--disable-infobars")
@@ -45,7 +46,7 @@ class AvitoParser:
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
 
-        # Mask WebDriver
+        # Маскировка WebDriver
         driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
             "source": """
                 Object.defineProperty(navigator, 'webdriver', {
@@ -59,24 +60,24 @@ class AvitoParser:
         return driver
 
     def _random_delay(self, min_sec=2, max_sec=5):
-        """Random delay between actions"""
+        """Случайная задержка между действиями"""
         delay = random.uniform(min_sec, max_sec)
-        print(f"Waiting {delay:.2f} seconds...")
+        print(f"Ожидание {delay:.2f} секунд...")
         time.sleep(delay)
 
     def load_page(self, url):
-        """Load page with error handling"""
-        print(f"Loading page: {url}")
+        """Загрузка страницы с обработкой ошибок"""
+        print(f"Загрузка страницы: {url}")
         try:
             self.driver.get(url)
             self._random_delay(3, 7)
             return True
         except Exception as e:
-            print(f"Error loading page: {e}")
+            print(f"Ошибка загрузки страницы: {e}")
             return False
 
     def _check_captcha(self):
-        """Check for captcha presence"""
+        """Проверка наличия капчи"""
         try:
             return any([
                 self.driver.find_element(By.CSS_SELECTOR, "div.captcha__container").is_displayed(),
@@ -86,156 +87,179 @@ class AvitoParser:
         except:
             return False
 
-    def parse_page(self, url):
-        """Parse page with ads"""
+    def parse_listing_page(self, url):
+        """Парсинг страницы со списком объявлений"""
         try:
             if not self.load_page(url):
                 return None
 
-            # Check for captcha
+            # Проверка капчи
             if self._check_captcha():
-                print("Captcha detected! Please:")
-                print("1. Solve captcha manually in browser")
-                print("2. Change IP address")
-                print("3. Wait 10-15 minutes")
-                input("Press Enter after solving captcha...")
+                print("Обнаружена капча! Пожалуйста:")
+                print("1. Решите капчу вручную в браузере")
+                print("2. Смените IP-адрес")
+                print("3. Подождите 10-15 минут")
+                input("Нажмите Enter после решения капчи...")
                 self._random_delay(5, 10)
 
-            # Wait for ads to load
-            WebDriverWait(self.driver, 15).until(
+            # Ожидание загрузки объявлений
+            list=WebDriverWait(self.driver, 15).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-marker="item"]')))
-
-            # Scroll to load all ads
+            print(list.text)
+            # Прокрутка для загрузки всех объявлений
             self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             self._random_delay(1, 3)
 
             return self.driver.page_source
         except Exception as e:
-            print(f"Error parsing page: {e}")
+            print(f"Ошибка парсинга страницы: {e}")
             return None
 
-    def extract_ads(self, html):
-        """Extract ads data from HTML"""
-        print("Extracting ads...")
-        soup = BeautifulSoup(html, 'html.parser')
-        ads = []
 
-        ad_cards = soup.select('div[data-marker="item"]')
-        print(f"Found {len(ad_cards)} ad cards")
-
-        for i, card in enumerate(ad_cards, 1):
-            try:
-                print(f"\nProcessing card #{i}")
-
-                # Extract basic info
-                title = card.select_one('[itemprop="name"]').text.strip()
-                price = card.select_one('[itemprop="price"]')['content']
-                address = card.select_one('[data-marker="item-address"]').text.strip()
-                date = card.select_one('[data-marker="item-date"]').text.strip()
-                link = urljoin(self.base_url, card.select_one('a[itemprop="url"]')['href'])
-
-                # Skip if already parsed
-                if link in self.parsed_ads:
-                    continue
-                self.parsed_ads.add(link)
-
-                # Extract additional details
-                area = self._extract_area(card)
-                description = self._extract_description(card)
-
-                ads.append({
-                    'title': title,
-                    'price': price,
-                    'address': address,
-                    'area': area,
-                    'date': date,
-                    'link': link,
-                    'description': description
-                })
-
-            except Exception as e:
-                print(f"Error in card #{i}: {e}")
-                continue
-
-        return ads
-
-    def _extract_area(self, card):
-        """Extract area in square meters"""
+    def parse_ad_page(self, url):
+        """Парсинг страницы конкретного объявления с сохранением всех параметров"""
         try:
-            params = card.select_one('[data-marker="item-specific-params"]').text
-            for p in params.split(','):
-                if 'м²' in p:
-                    return p.split('м²')[0].strip()
-            return "0"
-        except:
-            return "0"
+            if not self.load_page(url):
+                return None
 
-    def _extract_description(self, card):
-        """Extract ad description if available"""
-        try:
-            return card.select_one('[class*="description"]').text.strip()
-        except:
-            return ""
+            # Проверка капчи
+            if self._check_captcha():
+                print("Обнаружена капча! Пожалуйста:")
+                print("1. Решите капчу вручную в браузере")
+                print("2. Смените IP-адрес")
+                print("3. Подождите 10-15 минут")
+                input("Нажмите Enter после решения капчи...")
+                self._random_delay(5, 10)
 
-    def save_to_csv(self, ads, file_index):
-        """Save ads to CSV file"""
-        if not ads:
-            print("No ads to save")
-            return
+            # Ожидание загрузки основной информации
+            main_info_place = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located((By.XPATH , '//div[@data-marker="item-view/item-params"]')))
+            main_info_building = self.driver.find_element(By.XPATH, '//div[@data-marker="item-view/item-params"]')
+            price = self.driver.find_element(By.XPATH, '//span[@itemprop="price"]')
+            address = self.driver.find_element(By.XPATH, '//span[@class="style-item-address__string-wt61A"]')
+            coordinates = self.driver.find_element(By.XPATH, '//div[@class="style-item-map-wrapper-ElFsX '
+                                                             'style-expanded-x335n"]')
 
-        filename = os.path.join(self.output_dir, f"ads_{file_index}.csv")
-        print(f"Saving {len(ads)} ads to {filename}")
 
-        fieldnames = ['title', 'price', 'address', 'area', 'date', 'link', 'description']
+            # Базовые данные
+            base_data = {
+                'price': price.get_attribute("content"),
+                'address': address.text,
+                'coordinates_lat': coordinates.get_attribute("data-map-lat"),
+                'coordinates_lon': coordinates.get_attribute("data-map-lon")
+            }
 
-        with open(filename, mode='w', newline='', encoding='utf-8') as csv_file:
-            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(ads)
+            print(base_data)
+
+            # Параметры помещения
+            property_params = self._extract_property_params(soup)
+
+            # Объединяем данные
+            ad_data = {**base_data, **property_params}
+
+            return ad_data
+
+        except Exception as e:
+            print(f"Ошибка парсинга объявления {url}: {e}")
+            return None
+
+    def save_to_dataframe(self, ads_list):
+        """
+        Сохраняет список объявлений в DataFrame и CSV
+        автоматически обрабатывая все возможные параметры
+        """
+        if not ads_list:
+            print("Нет данных для сохранения")
+            return None
+
+        # Создаем DataFrame
+        df = pd.DataFrame(ads_list)
+
+        # Заполняем пропущенные значения
+        df = df.fillna('')
+
+        # Сохраняем в CSV
+        csv_path = os.path.join(self.output_dir, 'ads_data.csv')
+        df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+        print(f"Данные сохранены в {csv_path}")
+
+        return df
 
     def run(self, max_ads=50, ads_per_file=20):
-        """Main parser execution method"""
-        print(f"\nStarting parser (max {max_ads} ads)")
+        """Основной метод запуска парсера"""
+        print(f"\nЗапуск парсера (максимум {max_ads} объявлений)")
         total_ads = 0
         page = 1
+        all_ads = []
 
         try:
             while total_ads < max_ads:
-                print(f"\nPage {page}:")
+                print(f"\nСтраница {page}:")
                 url = f"{self.base_url}&p={page}"
-                html = self.parse_page(url)
+                html = self.parse_listing_page(url)
 
                 if not html:
-                    print("Failed to get data, stopping")
+                    print("Не удалось получить данные, остановка")
                     break
 
-                ads = self.extract_ads(html)
-                if not ads:
-                    print("No ads found, stopping")
+                ad_links = self.extract_ad_links(html)
+                if not ad_links:
+                    print("Объявления не найдены, остановка")
                     break
 
-                self.save_to_csv(ads, page)
-                total_ads += len(ads)
+                for link in ad_links:
+                    if total_ads >= max_ads:
+                        break
 
-                # Check if we should continue
+                    print(f"\nПарсинг объявления {total_ads + 1}/{max_ads}")
+                    ad_data = self.parse_ad_page(link)
+
+                    if ad_data:
+                        all_ads.append(ad_data)
+                        total_ads += 1
+                        self._random_delay(3, 6)
+
                 if total_ads >= max_ads:
                     break
 
                 page += 1
                 self._random_delay(5, 10)
 
-            print(f"\nDone! Collected {total_ads} ads total")
+            # Сохраняем все данные в DataFrame и CSV
+            if all_ads:
+                df = self.save_to_dataframe(all_ads)
+                print("\nСтатистика собранных данных:")
+                print(df.info())
+                print("\nПример данных:")
+                print(df.head())
+
+            print(f"\nГотово! Всего собрано {total_ads} объявлений")
+            return df
+
         except KeyboardInterrupt:
-            print("\nParser stopped by user")
+            print("\nПарсер остановлен пользователем")
+            if all_ads:
+                return self.save_to_dataframe(all_ads)
         except Exception as e:
-            print(f"\nCritical error: {e}")
+            print(f"\nКритическая ошибка: {e}")
+            if all_ads:
+                return self.save_to_dataframe(all_ads)
         finally:
             self.driver.quit()
 
 
 if __name__ == "__main__":
-    # Example URL for commercial real estate in Kazan
+    # URL для коммерческой недвижимости в Казани
     url = "https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDTSI2TmG2TmK2TmI9BE0zIGLA8qBiwPIgYsDAkW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9gqESHSLQvtGC0LTQtdC70YzQvdGL0Lkg0LLRhdC~0LQi&s=104"
 
     parser = AvitoParser(url)
-    parser.run(max_ads=50)
+    df = parser.run(max_ads=10)  # Парсим 10 объявлений
+
+    if df is not None:
+        # Можно работать с DataFrame
+        if 'Общая площадь' in df.columns:
+            try:
+                avg_area = pd.to_numeric(df['Общая площадь'], errors='coerce').mean()
+                print("\nСредняя площадь помещений:", avg_area)
+            except:
+                print("\nНе удалось вычислить среднюю площадь")
