@@ -115,6 +115,54 @@ class AvitoParser:
             print(f"Ошибка парсинга страницы: {e}")
             return None
 
+    def extract_ad_links(self, html):
+        """Извлечение ссылок на объявления"""
+        print("Извлечение ссылок на объявления...")
+        soup = BeautifulSoup(html, 'html.parser')
+        links = []
+
+        ad_cards = soup.select('div[data-marker="item"] a[itemprop="url"]')
+        print(f"Найдено {len(ad_cards)} объявлений")
+
+        for card in ad_cards:
+            try:
+                link = urljoin(self.base_url, card['href'])
+                if link not in self.parsed_ads:
+                    links.append(link)
+            except Exception as e:
+                print(f"Ошибка извлечения ссылки: {e}")
+                continue
+
+        return links
+
+
+
+    def _extract_property_params(self, soup):
+        """
+        Извлекает все доступные параметры помещения в виде словаря
+        """
+        params = defaultdict(str)
+
+        try:
+            params_block = soup.find('div', {'data-marker': 'item-view/item-params'})
+            if not params_block:
+                return dict(params)
+
+            # Извлекаем все пункты параметров
+            items = params_block.find_all('li', class_='params-paramsList__item-_2Y2O')
+
+            for item in items:
+                # Разделяем название параметра и значение
+                parts = [p.strip() for p in item.get_text(strip=True, separator=':').split(':')]
+                if len(parts) >= 2:
+                    param_name = parts[0]
+                    param_value = ':'.join(parts[1:])  # На случай, если в значении есть двоеточие
+                    params[param_name] = param_value.replace('м²', '').strip()
+
+        except Exception as e:
+            print(f"Ошибка при извлечении параметров: {e}")
+
+        return dict(params)
 
     def parse_ad_page(self, url):
         """Парсинг страницы конкретного объявления с сохранением всех параметров"""
