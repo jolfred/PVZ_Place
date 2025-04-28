@@ -23,6 +23,7 @@ class AvitoParser:
         self.driver = self._init_driver(headless)
         self.parsed_ads = set()
         os.makedirs(output_dir, exist_ok=True)
+        self.main_df = pd.DataFrame()
         print(f"Выходная директория: {os.path.abspath(output_dir)}")
 
     def _init_driver(self, headless):
@@ -76,16 +77,7 @@ class AvitoParser:
             print(f"Ошибка загрузки страницы: {e}")
             return False
 
-    def _check_captcha(self):
-        """Проверка наличия капчи"""
-        try:
-            return any([
-                self.driver.find_element(By.CSS_SELECTOR, "div.captcha__container").is_displayed(),
-                "captcha" in self.driver.page_source.lower(),
-                "анти-робот" in self.driver.page_source.lower()
-            ])
-        except:
-            return False
+
 
     def parse_listing_page(self, url):
         """Парсинг страницы со списком объявлений"""
@@ -93,14 +85,7 @@ class AvitoParser:
             if not self.load_page(url):
                 return None
 
-            # Проверка капчи
-            if self._check_captcha():
-                print("Обнаружена капча! Пожалуйста:")
-                print("1. Решите капчу вручную в браузере")
-                print("2. Смените IP-адрес")
-                print("3. Подождите 10-15 минут")
-                input("Нажмите Enter после решения капчи...")
-                self._random_delay(5, 10)
+
 
             # Ожидание загрузки объявлений
             list=WebDriverWait(self.driver, 15).until(
@@ -114,6 +99,37 @@ class AvitoParser:
         except Exception as e:
             print(f"Ошибка парсинга страницы: {e}")
             return None
+
+    def extract_ads(self, html):
+        """Извлечение данных объявлений из HTML"""
+        print("Извлечение объявлений...")
+        soup = BeautifulSoup(html, 'html.parser')
+        ads = []
+
+        ad_cards = soup.select('div[data-marker="item"]')
+        print(f"Найдено карточек: {len(ad_cards)}")
+
+        for i, card in enumerate(ad_cards, 1):
+            try:
+                print(f"\nОбработка карточки #{i}")
+
+                title = card.select_one('[itemprop="name"]').text.strip()
+                print(f"Заголовок: {title[:30]}...")
+
+                ads.append({
+                    'title': title,
+                    'price': card.select_one('[itemprop="price"]')['content'],
+                    'address': card.select_one('[data-marker="item-address"]').text.strip(),
+                    'area': self._extract_area(card),
+                    'link': urljoin(self.base_url, card.select_one('a[itemprop="url"]')['href']),
+                    'date': card.select_one('[data-marker="item-date"]').text.strip()
+                })
+
+            except Exception as e:
+                print(f"Ошибка в карточке #{i}: {e}")
+                continue
+
+        return ads
 
     def extract_ad_links(self, html):
         """Извлечение ссылок на объявления"""
@@ -164,20 +180,27 @@ class AvitoParser:
 
         return dict(params)
 
+    def parse_about_inf(self, html):
+        """Парсит HTML объявления и возвращает данные в виде словаря"""
+        soup = BeautifulSoup(html, 'html.parser')
+        result = {}
+
+        params_items = soup.find_all('li', class_='params-paramsList__item-_2Y2O')
+
+        for item in params_items:
+            name = item.find('span', class_='styles-module-noAccent-l9CMS').text.strip().replace(':', '').strip()
+            value = item.contents[-1].strip()
+            result[name] = value
+
+        return result
+
     def parse_ad_page(self, url):
         """Парсинг страницы конкретного объявления с сохранением всех параметров"""
         try:
             if not self.load_page(url):
                 return None
 
-            # Проверка капчи
-            if self._check_captcha():
-                print("Обнаружена капча! Пожалуйста:")
-                print("1. Решите капчу вручную в браузере")
-                print("2. Смените IP-адрес")
-                print("3. Подождите 10-15 минут")
-                input("Нажмите Enter после решения капчи...")
-                self._random_delay(5, 10)
+
 
             # Ожидание загрузки основной информации
             main_info_place = WebDriverWait(self.driver, 15).until(
@@ -189,23 +212,12 @@ class AvitoParser:
                                                              'style-expanded-x335n"]')
 
 
-            # Базовые данные
-            base_data = {
-                'price': price.get_attribute("content"),
-                'address': address.text,
-                'coordinates_lat': coordinates.get_attribute("data-map-lat"),
-                'coordinates_lon': coordinates.get_attribute("data-map-lon")
-            }
-
-            print(base_data)
-
-            # Параметры помещения
-            property_params = self._extract_property_params(soup)
-
-            # Объединяем данные
-            ad_data = {**base_data, **property_params}
-
-            return ad_data
+            inner_html = main_info_place.get_attribute('innerHTML')
+            parsed = self.parse_about_inf(inner_html)
+            print(parsed)
+            self.main_df.append(parsed)
+            print(self.main_df)
+            return df
 
         except Exception as e:
             print(f"Ошибка парсинга объявления {url}: {e}")
@@ -248,6 +260,14 @@ class AvitoParser:
 
                 if not html:
                     print("Не удалось получить данные, остановка")
+                    break
+
+                ads = self.extract_ads(html)
+
+
+
+                if not ads:
+                    print("Объявления не найдены, завершение")
                     break
 
                 ad_links = self.extract_ad_links(html)
