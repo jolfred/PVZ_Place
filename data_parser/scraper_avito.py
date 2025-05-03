@@ -19,6 +19,7 @@ class AvitoParser:
     def __init__(self, base_url, output_dir="output", headless=False):
         print(f"Инициализация парсера для {base_url}")
         self.base_url = base_url
+        self.current_items_list_page = base_url
         self.output_dir = output_dir
         self.driver = self._init_driver(headless)
         self.parsed_ads = set()
@@ -71,85 +72,63 @@ class AvitoParser:
         print(f"Загрузка страницы: {url}")
         try:
             self.driver.get(url)
-            self._random_delay(3, 7)
+            self._random_delay(5, 10)
             return True
         except Exception as e:
             print(f"Ошибка загрузки страницы: {e}")
             return False
 
+    def scroll_items_list_page(self):
+        """Прокрутка страницы для подгрузки всех объявлений"""
+        print("Прокрутка страницы для полной загрузки...")
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        self._random_delay(3, 7)
 
-
-    def parse_listing_page(self, url):
+    def scrap_items_list_page(self):
         """Парсинг страницы со списком объявлений"""
         try:
-            if not self.load_page(url):
+            if not self.load_page(self.current_items_list_page):
                 return None
 
-
-
             # Ожидание загрузки объявлений
-            list=WebDriverWait(self.driver, 15).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-marker="item"]')))
-            print(list.text)
-            # Прокрутка для загрузки всех объявлений
-            self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            self._random_delay(1, 3)
+            WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-marker="item"]'))
+            )
 
+            # Прокрутка для загрузки всех объявлений
+            self.scroll_items_list_page()
             return self.driver.page_source
+
         except Exception as e:
-            print(f"Ошибка парсинга страницы: {e}")
+            print(f"Ошибка парсинга страницы со списком объявлений: {e}")
             return None
 
-    def extract_ads(self, html):
+    def parse_items_list_page(self):
         """Извлечение данных объявлений из HTML"""
-        print("Извлечение объявлений...")
+        html = self.scrap_items_list_page()
+
+
         soup = BeautifulSoup(html, 'html.parser')
         ads = []
 
-        ad_cards = soup.select('div[data-marker="item"]')
-        print(f"Найдено карточек: {len(ad_cards)}")
+        items_list = soup.select('div[data-marker="item"]')
+        print(f"Найдено карточек: {len(items_list)}")
 
-        for i, card in enumerate(ad_cards, 1):
+        for item in items_list:
             try:
-                print(f"\nОбработка карточки #{i}")
-
-                title = card.select_one('[itemprop="name"]').text.strip()
-                print(f"Заголовок: {title[:30]}...")
-
                 ads.append({
-                    'title': title,
-                    'price': card.select_one('[itemprop="price"]')['content'],
-                    'address': card.select_one('[data-marker="item-address"]').text.strip(),
-                    'area': self._extract_area(card),
-                    'link': urljoin(self.base_url, card.select_one('a[itemprop="url"]')['href']),
-                    'date': card.select_one('[data-marker="item-date"]').text.strip()
+                    'title': item.select_one('[itemprop="name"]').text.strip(),
+                    'price': item.select_one('[itemprop="price"]')['content'],
+                    'address': item.select_one('[data-marker="item-address"]').text.strip(),
+                    'item_url': urljoin(self.base_url, item.select_one('a[itemprop="url"]')['href']),
+                    'date': item.select_one('[data-marker="item-date"]').text.strip()
                 })
 
             except Exception as e:
-                print(f"Ошибка в карточке #{i}: {e}")
+                print(f"Ошибка в карточке сбор информации с общей страницы объявлений: {e}")
                 continue
 
         return ads
-
-    def extract_ad_links(self, html):
-        """Извлечение ссылок на объявления"""
-        print("Извлечение ссылок на объявления...")
-        soup = BeautifulSoup(html, 'html.parser')
-        links = []
-
-        ad_cards = soup.select('div[data-marker="item"] a[itemprop="url"]')
-        print(f"Найдено {len(ad_cards)} объявлений")
-
-        for card in ad_cards:
-            try:
-                link = urljoin(self.base_url, card['href'])
-                if link not in self.parsed_ads:
-                    links.append(link)
-            except Exception as e:
-                print(f"Ошибка извлечения ссылки: {e}")
-                continue
-
-        return links
 
 
 
@@ -194,140 +173,133 @@ class AvitoParser:
 
         return result
 
-    def parse_ad_page(self, url):
+    def parse_item_page(self, url):
         """Парсинг страницы конкретного объявления с сохранением всех параметров"""
         try:
             if not self.load_page(url):
                 return None
 
 
-
             # Ожидание загрузки основной информации
-            main_info_place = WebDriverWait(self.driver, 15).until(
-                EC.presence_of_element_located((By.XPATH , '//div[@data-marker="item-view/item-params"]')))
-            main_info_building = self.driver.find_element(By.XPATH, '//div[@data-marker="item-view/item-params"]')
-            price = self.driver.find_element(By.XPATH, '//span[@itemprop="price"]')
-            address = self.driver.find_element(By.XPATH, '//span[@class="style-item-address__string-wt61A"]')
-            coordinates = self.driver.find_element(By.XPATH, '//div[@class="style-item-map-wrapper-ElFsX '
-                                                             'style-expanded-x335n"]')
+            main_info_place = self.driver.find_element(By.XPATH, '//div[@data-marker="item-view/item-params"]')
+            main_info_building = self.driver.find_element(By.XPATH, '//div[@class="styles-params-A5_I4"]')
+            # price = self.driver.find_element(By.XPATH, '//span[@itemprop="price"]')
+            # address = self.driver.find_element(By.XPATH, '//span[@class="style-item-address__string-wt61A"]')
+            coordinates = self.driver.find_element(By.XPATH, '//div[@class="style-item-map-wrapper-ElFsX style-expanded-x335n"]')
 
 
-            inner_html = main_info_place.get_attribute('innerHTML')
-            parsed = self.parse_about_inf(inner_html)
-            print(parsed)
-            self.main_df.append(parsed)
-            print(self.main_df)
-            return df
+            place_html = main_info_place.get_attribute('innerHTML')
+            building_html = main_info_building.get_attribute('innerHTML')
+            place = self.parse_about_inf(place_html)
+            building = self.parse_about_inf(building_html)
+            all_data = place | building | {
+                                        "lat": coordinates.get_attribute("data-map-lat"),
+                                        "lon": coordinates.get_attribute("data-map-lon")
+                                        }
+
+            return all_data
 
         except Exception as e:
             print(f"Ошибка парсинга объявления {url}: {e}")
             return None
 
-    def save_to_dataframe(self, ads_list):
+
+
+    def save_to_dataframe(self):
         """
         Сохраняет список объявлений в DataFrame и CSV
         автоматически обрабатывая все возможные параметры
         """
-        if not ads_list:
+        if self.main_df.empty:
             print("Нет данных для сохранения")
             return None
 
         # Создаем DataFrame
-        df = pd.DataFrame(ads_list)
-
-        # Заполняем пропущенные значения
-        df = df.fillna('')
 
         # Сохраняем в CSV
         csv_path = os.path.join(self.output_dir, 'ads_data.csv')
-        df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+        self.main_df.to_csv(csv_path, index=False, encoding='utf-8-sig')
         print(f"Данные сохранены в {csv_path}")
 
-        return df
+        return True
 
-    def run(self, max_ads=50, ads_per_file=20):
-        """Основной метод запуска парсера"""
-        print(f"\nЗапуск парсера (максимум {max_ads} объявлений)")
-        total_ads = 0
-        page = 1
-        all_ads = []
+    def next_list_items_page(self):
+        """
+        Проверка наличия следующей страницы
+
+        :param html: HTML текущей страницы
+        :return: True если есть следующая страница, False если нет
+        """
 
         try:
-            while total_ads < max_ads:
+            next_btn = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, '//a[@class="styles-module-item-zINQ7 styles-module-item_arrow-hv3h0 styles-module-item_link-GS05K"][@aria-label="Следующая страница"]'))
+            )
+
+            url = next_btn.get_attribute('href')
+            return url
+
+
+        except Exception as e:
+            print(f"Ошибка при поиске следующей страницы: {e}")
+            return None
+
+
+    def run(self):
+        """Основной метод запуска парсера"""
+
+        page = 1
+        total_ads = 1
+        try:
+            while True:
+
                 print(f"\nСтраница {page}:")
-                url = f"{self.base_url}&p={page}"
-                html = self.parse_listing_page(url)
 
-                if not html:
-                    print("Не удалось получить данные, остановка")
-                    break
+                self.main_df = pd.DataFrame(self.parse_items_list_page()).set_index(['item_url'], drop=False)
 
-                ads = self.extract_ads(html)
+                for item_url in self.main_df['item_url']:
+                    print(f"\nПарсинг объявления {total_ads}")
+                    all_data = self.parse_item_page(item_url)
+
+                    for col, value in all_data.items():
+                        self.main_df.loc[item_url, col] = value
+
+                    total_ads += 1
+                    self._random_delay(5, 7)
 
 
 
-                if not ads:
-                    print("Объявления не найдены, завершение")
-                    break
-
-                ad_links = self.extract_ad_links(html)
-                if not ad_links:
-                    print("Объявления не найдены, остановка")
-                    break
-
-                for link in ad_links:
-                    if total_ads >= max_ads:
-                        break
-
-                    print(f"\nПарсинг объявления {total_ads + 1}/{max_ads}")
-                    ad_data = self.parse_ad_page(link)
-
-                    if ad_data:
-                        all_ads.append(ad_data)
-                        total_ads += 1
-                        self._random_delay(3, 6)
-
-                if total_ads >= max_ads:
-                    break
-
+                self.current_items_list_page = self.next_list_items_page()
                 page += 1
-                self._random_delay(5, 10)
+                if not self.current_items_list_page:
+                    print("Следующая страница не найдена")
+                    break
 
             # Сохраняем все данные в DataFrame и CSV
-            if all_ads:
-                df = self.save_to_dataframe(all_ads)
-                print("\nСтатистика собранных данных:")
-                print(df.info())
-                print("\nПример данных:")
-                print(df.head())
+            self.save_to_dataframe()
+            print("\nСтатистика собранных данных:")
+            print(self.main_df.info())
+            print("\nПример данных:")
+            print(self.main_df.head())
 
             print(f"\nГотово! Всего собрано {total_ads} объявлений")
-            return df
+
+            return True
 
         except KeyboardInterrupt:
             print("\nПарсер остановлен пользователем")
-            if all_ads:
-                return self.save_to_dataframe(all_ads)
+            if not self.main_df.empty:
+                return self.save_to_dataframe()
         except Exception as e:
             print(f"\nКритическая ошибка: {e}")
-            if all_ads:
-                return self.save_to_dataframe(all_ads)
+            if not self.main_df.empty:
+                return self.save_to_dataframe()
         finally:
             self.driver.quit()
 
-
 if __name__ == "__main__":
     # URL для коммерческой недвижимости в Казани
-    url = "https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDTSI2TmG2TmK2TmI9BE0zIGLA8qBiwPIgYsDAkW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9gqESHSLQvtGC0LTQtdC70YzQvdGL0Lkg0LLRhdC~0LQi&s=104"
+    url = "https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsDAUW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9&s=104"
 
     parser = AvitoParser(url)
-    df = parser.run(max_ads=10)  # Парсим 10 объявлений
-
-    if df is not None:
-        # Можно работать с DataFrame
-        if 'Общая площадь' in df.columns:
-            try:
-                avg_area = pd.to_numeric(df['Общая площадь'], errors='coerce').mean()
-                print("\nСредняя площадь помещений:", avg_area)
-            except:
-                print("\nНе удалось вычислить среднюю площадь")
+    parser.run()  # Парсим 10 объявлений
