@@ -24,7 +24,7 @@ class AvitoParser:
         self.driver = self._init_driver(headless)
         self.parsed_ads = set()
         os.makedirs(output_dir, exist_ok=True)
-        self.main_df = pd.DataFrame()
+        self.full_data = pd.DataFrame()
         print(f"Выходная директория: {os.path.abspath(output_dir)}")
 
     def _init_driver(self, headless):
@@ -82,7 +82,7 @@ class AvitoParser:
         """Прокрутка страницы для подгрузки всех объявлений"""
         print("Прокрутка страницы для полной загрузки...")
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        self._random_delay(3, 7)
+
 
     def scrap_items_list_page(self):
         """Парсинг страницы со списком объявлений"""
@@ -95,8 +95,8 @@ class AvitoParser:
                 EC.presence_of_element_located((By.CSS_SELECTOR, 'div[data-marker="item"]'))
             )
 
-            # Прокрутка для загрузки всех объявлений
-            self.scroll_items_list_page()
+            # # Прокрутка для загрузки всех объявлений
+            # self.scroll_items_list_page()
             return self.driver.page_source
 
         except Exception as e:
@@ -210,7 +210,7 @@ class AvitoParser:
         Сохраняет список объявлений в DataFrame и CSV
         автоматически обрабатывая все возможные параметры
         """
-        if self.main_df.empty:
+        if self.full_data.empty:
             print("Нет данных для сохранения")
             return None
 
@@ -218,7 +218,7 @@ class AvitoParser:
 
         # Сохраняем в CSV
         csv_path = os.path.join(self.output_dir, 'ads_data.csv')
-        self.main_df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+        self.full_data.to_csv(csv_path, index=False, encoding='utf-8-sig')
         print(f"Данные сохранены в {csv_path}")
 
         return True
@@ -232,6 +232,8 @@ class AvitoParser:
         """
 
         try:
+            self.scrap_items_list_page()
+
             next_btn = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, '//a[@class="styles-module-item-zINQ7 styles-module-item_arrow-hv3h0 styles-module-item_link-GS05K"][@aria-label="Следующая страница"]'))
             )
@@ -255,17 +257,16 @@ class AvitoParser:
 
                 print(f"\nСтраница {page}:")
 
-                self.main_df = pd.DataFrame(self.parse_items_list_page()).set_index(['item_url'], drop=False)
+                main_df = pd.DataFrame(self.parse_items_list_page()).set_index(['item_url'], drop=False)
 
-                for item_url in self.main_df['item_url']:
+                for item_url in main_df['item_url']:
                     print(f"\nПарсинг объявления {total_ads}")
                     all_data = self.parse_item_page(item_url)
 
                     for col, value in all_data.items():
-                        self.main_df.loc[item_url, col] = value
+                        self.full_data.loc[item_url, col] = value
 
                     total_ads += 1
-                    self._random_delay(5, 7)
 
 
 
@@ -278,9 +279,9 @@ class AvitoParser:
             # Сохраняем все данные в DataFrame и CSV
             self.save_to_dataframe()
             print("\nСтатистика собранных данных:")
-            print(self.main_df.info())
+            print(self.full_data.info())
             print("\nПример данных:")
-            print(self.main_df.head())
+            print(self.full_data.head())
 
             print(f"\nГотово! Всего собрано {total_ads} объявлений")
 
@@ -288,18 +289,18 @@ class AvitoParser:
 
         except KeyboardInterrupt:
             print("\nПарсер остановлен пользователем")
-            if not self.main_df.empty:
+            if not self.full_data.empty:
                 return self.save_to_dataframe()
         except Exception as e:
             print(f"\nКритическая ошибка: {e}")
-            if not self.main_df.empty:
+            if not self.full_data.empty:
                 return self.save_to_dataframe()
         finally:
             self.driver.quit()
 
 if __name__ == "__main__":
     # URL для коммерческой недвижимости в Казани
-    url = "https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsDAUW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9&s=104"
+    url = "https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsDAUW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9&p=3&s=104"
 
     parser = AvitoParser(url)
-    parser.run()  # Парсим 10 объявлений
+    parser.run()
