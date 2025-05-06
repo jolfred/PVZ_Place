@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анализ точки</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .container { max-width: 800px; margin: 0 auto; }
+        .score { font-size: 24px; color: green; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Анализ точки: <span id="address"></span></h1>
+        <p>Рейтинг: <span id="score" class="score"></span>/100</p>
+
+        <h2>Данные:</h2>
+        <ul>
+            <li>Конкуренты: <span id="competitors"></span></li>
+            <li>Население: <span id="population"></span></li>
+            <li>Трафик: <span id="traffic"></span></li>
+        </ul>
+
+        <canvas id="chart" width="400" height="200"></canvas>
+    </div>
+
+    <script>
+        // Получаем ID точки из URL
+        const pointId = window.location.pathname.split("/").pop();
+
+        // Загружаем данные с бекенда
+        fetch(`/api/analyze/${pointId}`)
+            .then(res => res.json())
+            .then(point => {
+                document.getElementById("address").textContent = point.address;
+                document.getElementById("score").textContent = point.score;
+                document.getElementById("competitors").textContent = point.competitors;
+                document.getElementById("population").textContent = point.population;
+                document.getElementById("traffic").textContent = point.traffic;
+
+                // График (пример)
+                new Chart(document.getElementById("chart"), {
+                    type: "bar",
+                    data: {
+                        labels: ["Конкуренты", "Население", "Трафик"],
+                        datasets: [{
+                            label: "Метрики",
+                            data: [point.competitors, point.population / 100, point.traffic === "very_high" ? 100 : 50],
+                            backgroundColor: ["#ff6384", "#36a2eb", "#ffce56"]
+                        }]
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

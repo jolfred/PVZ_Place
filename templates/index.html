@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Анализ ПВЗ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=fe820deb-e2dd-4c8b-9f35-2978a3b4cbec&lang=ru_RU"></script>
+    <script>
+        initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+
+            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+            const map = new YMap(
+                document.getElementById('map'),
+                {
+                    location: {
+                        center: [37.588144, 55.733842],
+                        zoom: 10
+                    }
+                }
+            );
+
+            map.addChild(new YMapDefaultSchemeLayer());
+        }
+    </script>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">Анализ мест для ПВЗ</h1>
+    <div id="map" style="width: 600px; height: 400px"></div>
+      <!-- Список точек -->
+    <div class="point-list">
+        {% for point in points %}
+        <div class="point-card">
+            <h3>{{ point.address }}</h3>
+            <p>Конкуренты: {{ point.competitors }}</p>
+            <a href="/analyze/{{ point.id }}">Подробнее</a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        // Инициализация карты
+        ymaps.ready(() => {
+            const map = new ymaps.Map("map", { center: [55.75, 37.61], zoom: 12 });
+
+            // Добавляем точки
+            {% for point in points %}
+                new ymaps.Placemark(
+                    [{{ point.lat }}, {{ point.lon }}],
+                    { hintContent: "{{ point.address }}" },
+                    { preset: "islands#blueDotIcon" }
+                ).addTo(map);
+            {% endfor %}
+        });
+    </script>
+  </body>
+</html>
