@@ -246,61 +246,81 @@ class AvitoParser:
             print(f"Ошибка при поиске следующей страницы: {e}")
             return None
 
-
     def run(self):
         """Основной метод запуска парсера"""
-
         page = 1
-        total_ads = 1
+        total_ads = 0  # Инициализация счётчика
         try:
             while True:
-
                 print(f"\nСтраница {page}:")
 
-                main_df = pd.DataFrame(self.parse_items_list_page()).set_index(['item_url'], drop=False)
+                # Получаем объявления с текущей страницы
+                listings = self.parse_items_list_page()
+                if not listings:
+                    print("Не удалось получить объявления")
+                    break
 
-                for item_url in main_df['item_url']:
-                    print(f"\nПарсинг объявления {total_ads}")
-                    all_data = self.parse_item_page(item_url)
-
-                    for col, value in all_data.items():
-                        self.full_data.loc[item_url, col] = value
-
+                for listing in listings:
                     total_ads += 1
+                    print(f"\nПарсинг объявления {total_ads}: {listing['title']}")
 
+                    # Получаем детальную информацию для каждого объявления
+                    detailed_info = self.parse_item_page(listing['item_url'])
+                    if not detailed_info:
+                        print(f"Не удалось получить детальную информацию для {listing['item_url']}")
+                        continue
 
+                    # Объединяем основную и детальную информацию
+                    combined_data = {**listing, **detailed_info}
 
-                self.current_items_list_page = self.next_list_items_page()
-                page += 1
-                if not self.current_items_list_page:
+                    # Конвертируем в DataFrame и добавляем к full_data
+                    df = pd.DataFrame([combined_data])
+                    self.full_data = pd.concat([self.full_data, df], ignore_index=True)
+
+                    # Небольшая задержка между запросами
+                    self._random_delay(3, 6)
+
+                # Проверяем наличие следующей страницы
+                next_page_url = self.next_list_items_page()
+                if not next_page_url:
                     print("Следующая страница не найдена")
                     break
 
-            # Сохраняем все данные в DataFrame и CSV
-            self.save_to_dataframe()
-            print("\nСтатистика собранных данных:")
-            print(self.full_data.info())
-            print("\nПример данных:")
-            print(self.full_data.head())
+                self.current_items_list_page = next_page_url
+                page += 1
 
-            print(f"\nГотово! Всего собрано {total_ads} объявлений")
+                # Случайная задержка между страницами
+                self._random_delay(5, 10)
+
+            # Сохраняем собранные данные
+            if not self.full_data.empty:
+                self.save_to_dataframe()
+                print("\nСтатистика собранных данных:")
+                print(self.full_data.info())
+                print("\nПример данных:")
+                print(self.full_data.head())
+                print(f"\nГотово! Всего собрано {len(self.full_data)} объявлений")
+            else:
+                print("Не удалось собрать данные")
 
             return True
 
         except KeyboardInterrupt:
             print("\nПарсер остановлен пользователем")
             if not self.full_data.empty:
-                return self.save_to_dataframe()
+                self.save_to_dataframe()
+            return False
         except Exception as e:
             print(f"\nКритическая ошибка: {e}")
             if not self.full_data.empty:
-                return self.save_to_dataframe()
+                self.save_to_dataframe()
+            return False
         finally:
             self.driver.quit()
 
 if __name__ == "__main__":
     # URL для коммерческой недвижимости в Казани
-    url = " https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsDAUW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9&p=4&s=104"
+    url = "https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsDAUW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9&s=104"
 
     parser = AvitoParser(url)
     parser.run()
