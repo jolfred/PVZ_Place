@@ -1,11 +1,37 @@
-
-
-
 <!DOCTYPE html>
-<html>
-  <head>
-      <title>Анализ ПВЗ</title>
+<html lang="ru">
+<head>
+    <title>Анализ ПВЗ</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: 100vh; /* Занимает всю высоту окна */
+        }
+        #map {
+            flex: 1; /* Занимает всё доступное пространство */
+            width: 100%; /* Ширина карты */
+        }
+        .point-list {
+            max-width: 800px; /* Максимальная ширина блока с объявлениями */
+            margin: 20px auto; /* Центрирование блока */
+            overflow-y: auto; /* Прокрутка, если контент превышает высоту */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
     <script src="https://api-maps.yandex.ru/v3/?apikey=fe820deb-e2dd-4c8b-9f35-2978a3b4cbec&lang=ru_RU"></script>
     <script>
         initMap();
@@ -13,13 +39,13 @@
         async function initMap() {
             await ymaps3.ready;
 
-            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+            const { YMap, YMapDefaultSchemeLayer } = ymaps3;
 
             const map = new YMap(
                 document.getElementById('map'),
                 {
                     location: {
-                        center: [37.588144, 55.733842],
+                        center: [49.073303, 55.7955015],
                         zoom: 10
                     }
                 }
@@ -28,12 +54,10 @@
             map.addChild(new YMapDefaultSchemeLayer());
         }
     </script>
-  </head>
-
-  <body>
+</head>
+<body>
     <h1 style="text-align: center;">Анализ мест для ПВЗ</h1>
-    <div id="map" style="width: 600px; height: 400px"></div>
-      <!-- Список точек -->
+    <div id="map"></div>
     <div class="point-list">
         {% for point in points %}
         <div class="point-card">
@@ -43,21 +67,6 @@
         </div>
         {% endfor %}
     </div>
-
-    <script>
-        // Инициализация карты
-        ymaps.ready(() => {
-            const map = new ymaps.Map("map", { center: [55.75, 37.61], zoom: 12 });
-
-            // Добавляем точки
-            {% for point in points %}
-                new ymaps.Placemark(
-                    [{{ point.lat }}, {{ point.lon }}],
-                    { hintContent: "{{ point.address }}" },
-                    { preset: "islands#blueDotIcon" }
-                ).addTo(map);
-            {% endfor %}
-        });
-    </script>
-  </body>
+</body>
+</html>
 </html>

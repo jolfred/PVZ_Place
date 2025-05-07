@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh; /* Занимает всю высоту окна */
+}
+#map {
+    flex: 1; /* Занимает всё доступное пространство */
+    width: 100%; /* Ширина карты */
+}
+.point-list {
+    max-width: 800px; /* Максимальная ширина блока с объявлениями */
+    margin: 20px auto; /* Центрирование блока */
+    overflow-y: auto; /* Прокрутка, если контент превышает высоту */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}

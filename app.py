@@ -1,17 +1,9 @@
 from flask import Flask, render_template, jsonify, request
-from flask_cors import CORS
+
 import pandas as pd
 
 app = Flask(__name__)
-cors = CORS(app, resources={
-    r"/api/*": {
-        "origins": [
-            "http://localhost",
-            "http://127.0.0.1",
-            "http://example.com"
-        ]
-    }
-})
+
 # Загружаем фейковые данные (потом замените на свои)
 pvz_data = [
     {"id": 1, "city": "Москва", "lat": 55.751244, "lon": 37.618423, "address": "ул. Тверская, 1", "competitors": 3,
