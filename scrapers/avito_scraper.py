@@ -320,7 +320,8 @@ class AvitoParser:
 
 if __name__ == "__main__":
     # URL для коммерческой недвижимости в Казани
-    url = "https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/sdam-ASgBAgICAUSwCNRW?cd=1&f=ASgBAQECAkSwCNRW9BKk2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsDAUW2ExZ7ImZyb20iOm51bGwsInRvIjoxNTB9&s=104"
+    url = "https://www.avito.ru/tatarstan/kommercheskaya_nedvizhimost/prodam-ASgBAgICAUSwCNJW?cd=1&f" \
+          "=ASgBAQICAkSwCNJW8hKg2gECQJ7DDSSI2TmK2TmI9BE0zIGLA8qBiwPIgYsD&p=6&s=104"
 
-    parser = AvitoParser(url)
+    parser = AvitoParser(url, output_dir="output_продажа2")
     parser.run()

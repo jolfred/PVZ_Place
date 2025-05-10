@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 
 
 class WildberriesPVZParser:
-    def __init__(self, base_url, coordinates_list, output_dir="output", headless=False):
+    def __init__(self, base_url, coordinates_list, output_dir="output_wb", headless=False):
         print(f"Инициализация парсера для {base_url}")
         self.base_url = base_url
         self.coordinates_list = coordinates_list
@@ -104,19 +104,64 @@ class WildberriesPVZParser:
             print(f"Ошибка при клике в центр экрана: {e}")
             return False
 
+    def parse_single_radius(self, html_content, radius):
+        """
+        Функция для парсинга HTML-кода и извлечения данных в виде словаря.
+
+        :param html_content: str, HTML-код для парсинга
+        :return: dict, словарь с заголовками и значениями
+        """
+        soup = BeautifulSoup(html_content, 'html.parser')
+        data = {'radius': radius}
+
+        for item in soup.find_all('li', class_='ant-list-item'):
+            title = item.find('strong').text
+            value = item.find_all('span')[-1].text
+            data[title] = value
+
+        return data
+
     def pars_location_info(self):
         try:
-            element = self.driver.find_element(By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[4]/div['
-                                                         '1]/div['
-                                                  '2]/div')
-            print(element.get_attribute('innerHTML'))
-        except NoSuchElementException:
-            return None
+
+            roll_location_info_el = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located((By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[4]/div[1]/div[1]'))
+            )
+            roll_location_info_el.click()
+            html_content_300m = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[4]/div[1]/div[2]/div/div/div[2]/div/div'))
+            ).get_attribute('innerHTML')
+            data_300m = self.parse_single_radius(html_content_300m, 300)
+
+            location_info_el_600m = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[4]/div[1]/div[2]/div/div/div[1]/div/label[2]/div'))
+            )
+
+            location_info_el_600m.click()
+
+            WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[4]/div[1]/div[2]/div/div/div[2]/div/div/ul/li[1]/div/div[2]/span/strong'))
+            )
+
+
+            html_content_600m = self.driver.find_element(By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[4]/div[1]/div[2]/div/div/div[2]/div/div')
+            print(html_content_600m.text)
+            inner_html = self.driver.execute_script("return arguments[0].innerHTML;", html_content_600m)
+
+            data_600m = self.parse_single_radius(html_content_600m, 600)
+
+            return pd.DataFrame([data_300m, data_600m])
+
+        except Exception as e:
+            print("нет нихуя")
+            return pd.DataFrame()
 
 
     def parse_coordinates(self, lat, lon):
         """Парсинг данных для конкретных координат"""
-        res = {}
         url = f"{self.base_url}#17/{lat}/{lon}"
 
         if not self.load_page(url):
@@ -130,10 +175,23 @@ class WildberriesPVZParser:
         )
         wb_type = self.driver.find_element(By.XPATH, '//*[@id="rc-tabs-0-panel-discovery"]/div[2]/div[1]/div[1]/div')
 
-        res["Point_info"] = wb_type
-        res["location_info"] = self.pars_location_info()
 
-        return True
+        res = self.pars_location_info()
+
+        if not res.empty:
+            res.assign(
+                point_info=wb_type.text,
+                lat=lat,
+                lon=lon
+            )
+        else:
+            res = pd.DataFrame([{
+                "point_info": wb_type.text,
+                "lat": lat,
+                "lon": lon
+            }])
+        print(res)
+        return res
 
     def save_to_dataframe(self):
         """
@@ -160,11 +218,10 @@ class WildberriesPVZParser:
 
                 pvz_data = self.parse_coordinates(lat, lon)
 
-                if pvz_data:
+                if not pvz_data.empty:
                     # Добавляем данные в DataFrame
-                    df = pd.DataFrame(pvz_data)
-                    self.full_data = pd.concat([self.full_data, df], ignore_index=True)
-                    total_pvz += len(pvz_data)
+                    self.full_data = pd.concat([self.full_data, pvz_data], ignore_index=True)
+
 
                     # Сохраняем промежуточные результаты
                     if i % 10 == 0:
@@ -202,7 +259,10 @@ if __name__ == "__main__":
     base_url = "https://pvz-stat-map.wildberries.ru/"
 
     # Пример списка координат (замените на свои)
-    ads_data = pd.read_csv('output/ads_data.csv')
-    coordinates_list = ads_data[['lat', 'lon']].values
+    # ads_data = pd.read_csv('output/ads_data.csv')
+    # coordinates_list = ads_data[['lat', 'lon']].values
+    coordinates_list = [
+        (55.800686, 48.967669)
+    ]
     parser = WildberriesPVZParser(base_url, coordinates_list)
     parser.run()
