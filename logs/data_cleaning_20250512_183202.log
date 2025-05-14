@@ -1,0 +1,8 @@
+2025-05-12 18:32:04,610 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-05-12 18:32:04,610 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 18:32:04,610 - INFO -  * Restarting with stat
+2025-05-12 18:32:41,670 - INFO -  * Restarting with stat
+2025-05-12 18:36:59,045 - INFO -  * Restarting with stat
+2025-05-12 18:37:26,372 - INFO -  * Restarting with stat
+2025-05-12 18:38:10,030 - INFO -  * Restarting with stat

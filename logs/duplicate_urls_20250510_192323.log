@@ -1,0 +1,967 @@
+2025-05-10 19:23:23,037 - INFO - Загружено 1087 записей
+2025-05-10 19:23:23,389 - INFO - Найдено 75 пар дубликатов
+2025-05-10 19:23:23,389 - INFO - 
+Пары дубликатов:
+2025-05-10 19:23:23,389 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,389 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7339431918?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJuazJYdUhMWEdodzJVQjZZIjt9HdiNeT8AAAA
+2025-05-10 19:23:23,389 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,400 - INFO -    Адрес: ул. Шамиля Усманова, 18ДНабережные Челны
+2025-05-10 19:23:23,400 - INFO -    Цена: 1500
+2025-05-10 19:23:23,401 - INFO -    Площадь: 105.6
+2025-05-10 19:23:23,401 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_105.6_m_7360551513?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJuazJYdUhMWEdodzJVQjZZIjt9HdiNeT8AAAA
+2025-05-10 19:23:23,403 - INFO -    Адрес: ул. Шамиля Усманова, 18ДНабережные Челны
+2025-05-10 19:23:23,403 - INFO -    Цена: 1500
+2025-05-10 19:23:23,403 - INFO -    Площадь: 105.6
+2025-05-10 19:23:23,403 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,403 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,403 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_80_m_7353905160?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJuazJYdUhMWEdodzJVQjZZIjt9HdiNeT8AAAA
+2025-05-10 19:23:23,411 - INFO -    Адрес: ул. Горьковское Шоссе, 2Ак1Казань
+2025-05-10 19:23:23,411 - INFO -    Цена: 144000
+2025-05-10 19:23:23,411 - INFO -    Площадь: 80.0
+2025-05-10 19:23:23,411 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_80_kv_m_v_zhk_elegiya_7310127395?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,411 - INFO -    Заголовок: Аренда 80 кв м в ЖК Элегия
+2025-05-10 19:23:23,411 - INFO -    Адрес: ул. Горьковское Шоссе, 2Ак1Казань
+2025-05-10 19:23:23,411 - INFO -    Цена: 144000
+2025-05-10 19:23:23,411 - INFO -    Площадь: 80.0
+2025-05-10 19:23:23,411 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,411 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,411 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_80_m_7353905160?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJuazJYdUhMWEdodzJVQjZZIjt9HdiNeT8AAAA
+2025-05-10 19:23:23,420 - INFO -    Адрес: ул. Горьковское Шоссе, 2Ак1Казань
+2025-05-10 19:23:23,421 - INFO -    Цена: 144000
+2025-05-10 19:23:23,421 - INFO -    Площадь: 80.0
+2025-05-10 19:23:23,421 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/1_etazh_novyy_zhk_elegiya_potolok_5_m_80_m_4404564569?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:23,421 - INFO -    Адрес: ул. Горьковское Шоссе, 2Ак3Казань
+2025-05-10 19:23:23,421 - INFO -    Цена: 144000
+2025-05-10 19:23:23,421 - INFO -    Площадь: 80.0
+2025-05-10 19:23:23,421 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,421 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,421 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_80_kv_m_v_zhk_elegiya_7310127395?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,421 - INFO -    Заголовок: Аренда 80 кв м в ЖК Элегия
+2025-05-10 19:23:23,421 - INFO -    Адрес: ул. Горьковское Шоссе, 2Ак1Казань
+2025-05-10 19:23:23,421 - INFO -    Цена: 144000
+2025-05-10 19:23:23,421 - INFO -    Площадь: 80.0
+2025-05-10 19:23:23,421 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/1_etazh_novyy_zhk_elegiya_potolok_5_m_80_m_4404564569?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:23,421 - INFO -    Адрес: ул. Горьковское Шоссе, 2Ак3Казань
+2025-05-10 19:23:23,435 - INFO -    Цена: 144000
+2025-05-10 19:23:23,435 - INFO -    Площадь: 80.0
+2025-05-10 19:23:23,435 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,436 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,436 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/sdaetsya_pomeschenie_na_pervoy_linii_7346615535?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJuazJYdUhMWEdodzJVQjZZIjt9HdiNeT8AAAA
+2025-05-10 19:23:23,436 - INFO -    Заголовок: Сдается помещение на первой линии
+2025-05-10 19:23:23,436 - INFO -    Адрес: пр-т Чулман, 1АНабережные Челны
+2025-05-10 19:23:23,436 - INFO -    Цена: 1500
+2025-05-10 19:23:23,436 - INFO -    Площадь: 108.0
+2025-05-10 19:23:23,436 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/torgovaya_ploschad_108_m_3641771647?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxNWNpbzZkSjZ0a3FTZkxGIjt9XP5w2z8AAAA
+2025-05-10 19:23:23,443 - INFO -    Адрес: пр-т Чулман, 1АНабережные Челны
+2025-05-10 19:23:23,443 - INFO -    Цена: 1500
+2025-05-10 19:23:23,443 - INFO -    Площадь: 108.0
+2025-05-10 19:23:23,443 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,443 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,443 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_sklad_7387031460?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJuazJYdUhMWEdodzJVQjZZIjt9HdiNeT8AAAA
+2025-05-10 19:23:23,443 - INFO -    Заголовок: Свободного назначения, склад
+2025-05-10 19:23:23,443 - INFO -    Адрес: ул. Клары Цеткин, 10Казань
+2025-05-10 19:23:23,443 - INFO -    Цена: 25000
+2025-05-10 19:23:23,443 - INFO -    Площадь: 35.0
+2025-05-10 19:23:23,443 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_sklad_proizvodstvo_7355334846?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,443 - INFO -    Заголовок: Свободного назначения, склад, производство
+2025-05-10 19:23:23,443 - INFO -    Адрес: ул. Клары Цеткин, 31/106Казань
+2025-05-10 19:23:23,443 - INFO -    Цена: 25000
+2025-05-10 19:23:23,443 - INFO -    Площадь: 35.0
+2025-05-10 19:23:23,443 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,443 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,443 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_20_m_7338427555?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJKclZOUk1YSWt5b0R4d09FIjt98NnjjD8AAAA
+2025-05-10 19:23:23,453 - INFO -    Адрес: ул. Гагарина, 89Казань
+2025-05-10 19:23:23,455 - INFO -    Цена: 20000
+2025-05-10 19:23:23,455 - INFO -    Площадь: 20.0
+2025-05-10 19:23:23,455 - INFO - 
+2. URL: https://www.avito.ru/chistopol/kommercheskaya_nedvizhimost/torgovaya_ploschad_20_m_7320759702?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmSFJBajRmcnptY3Q2ZkZmIjt9XKvySD8AAAA
+2025-05-10 19:23:23,455 - INFO -    Адрес: ул. Вахитова, 116АЧистополь
+2025-05-10 19:23:23,455 - INFO -    Цена: 20000
+2025-05-10 19:23:23,455 - INFO -    Площадь: 20.0
+2025-05-10 19:23:23,455 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,455 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,455 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_60_m_7326986294?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJUaEZCenRxRm5Tb09YUlY1Ijt9tGtraT8AAAA
+2025-05-10 19:23:23,455 - INFO -    Адрес: ул. Четаева, 14Казань
+2025-05-10 19:23:23,467 - INFO -    Цена: 90000
+2025-05-10 19:23:23,467 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,467 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_60_m_7321393271?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,470 - INFO -    Адрес: ул. Юлиуса Фучика, 109Казань
+2025-05-10 19:23:23,470 - INFO -    Цена: 90000
+2025-05-10 19:23:23,470 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,470 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,470 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,470 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_60_m_7326986294?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJUaEZCenRxRm5Tb09YUlY1Ijt9tGtraT8AAAA
+2025-05-10 19:23:23,475 - INFO -    Адрес: ул. Четаева, 14Казань
+2025-05-10 19:23:23,475 - INFO -    Цена: 90000
+2025-05-10 19:23:23,475 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,475 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_4751945069?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJMWE1FOUVBNkxhT1RGT1NNIjt9eadmeT8AAAA
+2025-05-10 19:23:23,475 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,475 - INFO -    Адрес: ул. Юлиуса Фучика, 109Казань
+2025-05-10 19:23:23,475 - INFO -    Цена: 90000
+2025-05-10 19:23:23,475 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,475 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,475 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,475 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_60_m_7321393271?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,483 - INFO -    Адрес: ул. Юлиуса Фучика, 109Казань
+2025-05-10 19:23:23,483 - INFO -    Цена: 90000
+2025-05-10 19:23:23,483 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,483 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_4751945069?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJMWE1FOUVBNkxhT1RGT1NNIjt9eadmeT8AAAA
+2025-05-10 19:23:23,483 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,483 - INFO -    Адрес: ул. Юлиуса Фучика, 109Казань
+2025-05-10 19:23:23,483 - INFO -    Цена: 90000
+2025-05-10 19:23:23,483 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,483 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,483 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,483 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_50_m_4856327039?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJMWE1FOUVBNkxhT1RGT1NNIjt9eadmeT8AAAA
+2025-05-10 19:23:23,491 - INFO -    Адрес: Сенаторская ул., 1с. Сокуры
+2025-05-10 19:23:23,491 - INFO -    Цена: 1500
+2025-05-10 19:23:23,491 - INFO -    Площадь: 50.0
+2025-05-10 19:23:23,491 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_50_m_4280788896?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmOWJHRlJRc1BKUE5vZEIyIjt9afBC3D8AAAA
+2025-05-10 19:23:23,491 - INFO -    Адрес: Казанский пр-т, 174Набережные Челны
+2025-05-10 19:23:23,499 - INFO -    Цена: 1500
+2025-05-10 19:23:23,499 - INFO -    Площадь: 50.0
+2025-05-10 19:23:23,499 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,499 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,499 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/sdam_pomeschenie_svobodnogo_naznacheniya_122_m_7337240263?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJUaEZCenRxRm5Tb09YUlY1Ijt9tGtraT8AAAA
+2025-05-10 19:23:23,503 - INFO -    Адрес: ул. Академика Королёва, 2/1Набережные Челны
+2025-05-10 19:23:23,503 - INFO -    Цена: 1100
+2025-05-10 19:23:23,503 - INFO -    Площадь: 122.0
+2025-05-10 19:23:23,506 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_122_m_4556725205?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:23,507 - INFO -    Адрес: ул. Академика Королёва, 2Набережные Челны
+2025-05-10 19:23:23,507 - INFO -    Цена: 1100
+2025-05-10 19:23:23,507 - INFO -    Площадь: 122.0
+2025-05-10 19:23:23,507 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,507 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,507 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_134_7345584311?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJUaEZCenRxRm5Tb09YUlY1Ijt9tGtraT8AAAA
+2025-05-10 19:23:23,507 - INFO -    Заголовок: Торговая площадь 134
+2025-05-10 19:23:23,507 - INFO -    Адрес: ул. Александра Курынова, 5к2Казань
+2025-05-10 19:23:23,507 - INFO -    Цена: 2500
+2025-05-10 19:23:23,507 - INFO -    Площадь: 134.0
+2025-05-10 19:23:23,515 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/ofismagazin_7341393736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,516 - INFO -    Заголовок: Офис,магазин
+2025-05-10 19:23:23,516 - INFO -    Адрес: ул. Александра Курынова, 5к2Казань
+2025-05-10 19:23:23,516 - INFO -    Цена: 2500
+2025-05-10 19:23:23,516 - INFO -    Площадь: 134.0
+2025-05-10 19:23:23,516 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,516 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,520 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pomeschenie_101.5_m_pod_torgovlyuofis_byuti_kovork_7344959219?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJKclZOUk1YSWt5b0R4d09FIjt98NnjjD8AAAA
+2025-05-10 19:23:23,524 - INFO -    Адрес: ул. Гарифа Ахунова, 22АКазань
+2025-05-10 19:23:23,524 - INFO -    Цена: 162400
+2025-05-10 19:23:23,524 - INFO -    Площадь: 101.5
+2025-05-10 19:23:23,524 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pomeschenie_101.5_m_pod_magazin_ofis_salon_7312902008?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,528 - INFO -    Адрес: ул. Гарифа Ахунова, 22АКазань
+2025-05-10 19:23:23,528 - INFO -    Цена: 162400
+2025-05-10 19:23:23,528 - INFO -    Площадь: 101.5
+2025-05-10 19:23:23,528 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,528 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,528 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_7314236462?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,528 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,528 - INFO -    Адрес: ЖК Лесной Городок, Берёзовая ул., 2АКазань
+2025-05-10 19:23:23,528 - INFO -    Цена: 6000
+2025-05-10 19:23:23,532 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,532 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_4755423047?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:23,532 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,532 - INFO -    Адрес: ул. Аделя Кутуя, 153ВКазань
+2025-05-10 19:23:23,532 - INFO -    Цена: 6000
+2025-05-10 19:23:23,532 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,532 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,532 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,532 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_7314236462?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,536 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,536 - INFO -    Адрес: ЖК Лесной Городок, Берёзовая ул., 2АКазань
+2025-05-10 19:23:23,538 - INFO -    Цена: 6000
+2025-05-10 19:23:23,538 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,539 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_2035668685?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,539 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,539 - INFO -    Адрес: Адмиралтейская ул., 3к1Казань
+2025-05-10 19:23:23,539 - INFO -    Цена: 6000
+2025-05-10 19:23:23,539 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,539 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,539 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,539 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_7314236462?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,539 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,539 - INFO -    Адрес: ЖК Лесной Городок, Берёзовая ул., 2АКазань
+2025-05-10 19:23:23,539 - INFO -    Цена: 6000
+2025-05-10 19:23:23,539 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,539 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_1971153572?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,539 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,539 - INFO -    Адрес: ул. Фатыха Амирхана, 52Казань
+2025-05-10 19:23:23,539 - INFO -    Цена: 6000
+2025-05-10 19:23:23,539 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,539 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,548 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,548 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/konteyner_v_arendu_pod_sklad_7250481361?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,548 - INFO -    Заголовок: Контейнер в аренду под склад
+2025-05-10 19:23:23,548 - INFO -    Адрес: Южно-Промышленная ул., 20Казань
+2025-05-10 19:23:23,548 - INFO -    Цена: 6000
+2025-05-10 19:23:23,548 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,548 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/konteyner_v_arendu_pod_sklad_1971497373?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,548 - INFO -    Заголовок: Контейнер в аренду под склад
+2025-05-10 19:23:23,553 - INFO -    Адрес: Советский район, жилой массив Самосырово, ул. Мира, 122Казань
+2025-05-10 19:23:23,554 - INFO -    Цена: 6000
+2025-05-10 19:23:23,554 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,554 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,554 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,554 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_4755423047?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:23,554 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,554 - INFO -    Адрес: ул. Аделя Кутуя, 153ВКазань
+2025-05-10 19:23:23,554 - INFO -    Цена: 6000
+2025-05-10 19:23:23,554 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,554 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_2035668685?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,554 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,554 - INFO -    Адрес: Адмиралтейская ул., 3к1Казань
+2025-05-10 19:23:23,554 - INFO -    Цена: 6000
+2025-05-10 19:23:23,554 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,554 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,554 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,554 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_4755423047?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:23,554 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,564 - INFO -    Адрес: ул. Аделя Кутуя, 153ВКазань
+2025-05-10 19:23:23,564 - INFO -    Цена: 6000
+2025-05-10 19:23:23,564 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,564 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_1971153572?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,564 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,564 - INFO -    Адрес: ул. Фатыха Амирхана, 52Казань
+2025-05-10 19:23:23,564 - INFO -    Цена: 6000
+2025-05-10 19:23:23,564 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,564 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,564 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,564 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_2035668685?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,564 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,564 - INFO -    Адрес: Адмиралтейская ул., 3к1Казань
+2025-05-10 19:23:23,564 - INFO -    Цена: 6000
+2025-05-10 19:23:23,570 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,570 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_konteynera_pod_sklad_1971153572?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,570 - INFO -    Заголовок: Аренда контейнера под склад
+2025-05-10 19:23:23,572 - INFO -    Адрес: ул. Фатыха Амирхана, 52Казань
+2025-05-10 19:23:23,572 - INFO -    Цена: 6000
+2025-05-10 19:23:23,572 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,572 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,572 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,572 - INFO - 1. URL: https://www.avito.ru/elabuga/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7341538321?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,572 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,572 - INFO -    Адрес: пр-т Нефтяников, 187Елабуга
+2025-05-10 19:23:23,572 - INFO -    Цена: 60000
+2025-05-10 19:23:23,572 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,572 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_60_m_4370415166?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:23,580 - INFO -    Адрес: ул. Фрунзе, 1ГКазань
+2025-05-10 19:23:23,580 - INFO -    Цена: 60000
+2025-05-10 19:23:23,580 - INFO -    Площадь: 60.0
+2025-05-10 19:23:23,580 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,580 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,580 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_30_m_7341441899?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,586 - INFO -    Адрес: Тополевая ул., 55Казань
+2025-05-10 19:23:23,586 - INFO -    Цена: 20000
+2025-05-10 19:23:23,586 - INFO -    Площадь: 30.0
+2025-05-10 19:23:23,586 - INFO - 
+2. URL: https://www.avito.ru/vysokaya_gora/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_30_m_2056699889?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,588 - INFO -    Адрес: Станционная ул., 3Апос. железнодорожной станции Высокая Гора
+2025-05-10 19:23:23,588 - INFO -    Цена: 20000
+2025-05-10 19:23:23,588 - INFO -    Площадь: 30.0
+2025-05-10 19:23:23,588 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,588 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,588 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_60.5_7313026993?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,588 - INFO -    Заголовок: Торговая площадь 60.5
+2025-05-10 19:23:23,588 - INFO -    Адрес: Ленинградская ул., 22Казань
+2025-05-10 19:23:23,588 - INFO -    Цена: 130000
+2025-05-10 19:23:23,588 - INFO -    Площадь: 60.5
+2025-05-10 19:23:23,596 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdaetsya_torgovoe_pomeschenie_na_trafike_7321319718?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,596 - INFO -    Заголовок: Сдается торговое помещение на трафике
+2025-05-10 19:23:23,596 - INFO -    Адрес: Ленинградская ул., 22Казань
+2025-05-10 19:23:23,596 - INFO -    Цена: 130000
+2025-05-10 19:23:23,596 - INFO -    Площадь: 60.5
+2025-05-10 19:23:23,596 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,596 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,596 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/torgovayaot_60_do_127_m_7351879901?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,596 - INFO -    Адрес: Московский пр-т, 35Набережные Челны
+2025-05-10 19:23:23,596 - INFO -    Цена: 1300
+2025-05-10 19:23:23,596 - INFO -    Площадь: 1.0
+2025-05-10 19:23:23,596 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/torgovaya_ot_50_do_400_m_4599583452?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4eGZWZmdvWUJvUFdCTW1sIjt9jQZcRz8AAAA
+2025-05-10 19:23:23,606 - INFO -    Адрес: 18-й комплекс, 5Набережные Челны
+2025-05-10 19:23:23,606 - INFO -    Цена: 1300
+2025-05-10 19:23:23,606 - INFO -    Площадь: 1.0
+2025-05-10 19:23:23,606 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,606 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,606 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovoe_pomeschenie_na_pervoy_linii_40_m_7321484462?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,606 - INFO -    Адрес: ул. Кул Гали, 34Казань
+2025-05-10 19:23:23,606 - INFO -    Цена: 60000
+2025-05-10 19:23:23,606 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,606 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_7282012559?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmSFJBajRmcnptY3Q2ZkZmIjt9XKvySD8AAAA
+2025-05-10 19:23:23,606 - INFO -    Заголовок: Торговая площадь
+2025-05-10 19:23:23,606 - INFO -    Адрес: ул. Кул Гали, 34Казань
+2025-05-10 19:23:23,606 - INFO -    Цена: 60000
+2025-05-10 19:23:23,606 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,606 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,645 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,645 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovoe_pomeschenie_na_pervoy_linii_40_m_7321484462?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,653 - INFO -    Адрес: ул. Кул Гали, 34Казань
+2025-05-10 19:23:23,653 - INFO -    Цена: 60000
+2025-05-10 19:23:23,653 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,661 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7288481404?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,661 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,665 - INFO -    Адрес: ул. Кул Гали, 34Казань
+2025-05-10 19:23:23,665 - INFO -    Цена: 60000
+2025-05-10 19:23:23,670 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,670 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,670 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,670 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_7282012559?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmSFJBajRmcnptY3Q2ZkZmIjt9XKvySD8AAAA
+2025-05-10 19:23:23,670 - INFO -    Заголовок: Торговая площадь
+2025-05-10 19:23:23,670 - INFO -    Адрес: ул. Кул Гали, 34Казань
+2025-05-10 19:23:23,678 - INFO -    Цена: 60000
+2025-05-10 19:23:23,678 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,678 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7288481404?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,684 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,684 - INFO -    Адрес: ул. Кул Гали, 34Казань
+2025-05-10 19:23:23,686 - INFO -    Цена: 60000
+2025-05-10 19:23:23,686 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,686 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,686 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,686 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/sdam_pomeschenie_svobodnogo_naznacheniya_120_m_7337826088?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,694 - INFO -    Адрес: ул. Нариманова, 8/1Набережные Челны
+2025-05-10 19:23:23,694 - INFO -    Цена: 1000
+2025-05-10 19:23:23,700 - INFO -    Площадь: 120.0
+2025-05-10 19:23:23,703 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_120_m_3500846566?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxNWNpbzZkSjZ0a3FTZkxGIjt9XP5w2z8AAAA
+2025-05-10 19:23:23,711 - INFO -    Адрес: ул. Нариманова, 3Набережные Челны
+2025-05-10 19:23:23,711 - INFO -    Цена: 1000
+2025-05-10 19:23:23,711 - INFO -    Площадь: 120.0
+2025-05-10 19:23:23,711 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,711 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,720 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pomeschenie_61.2_m_pod_manikyur_fitnes_pvz_7312805229?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJhSnd5Y1g5WXZ3NVhubzg4Ijt9s8cfBz8AAAA
+2025-05-10 19:23:23,720 - INFO -    Адрес: ул. Профессора Камая, 10к4Казань
+2025-05-10 19:23:23,720 - INFO -    Цена: 91800
+2025-05-10 19:23:23,720 - INFO -    Площадь: 61.2
+2025-05-10 19:23:23,727 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pomeschenie_61.2_m_pod_ofis_magazin_studiyu_s_kan_7312284306?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ6cnRBNXRCcHIxZlRKMTRYIjt9cVV1VD8AAAA
+2025-05-10 19:23:23,727 - INFO -    Адрес: ул. Профессора Камая, 10к4Казань
+2025-05-10 19:23:23,727 - INFO -    Цена: 91800
+2025-05-10 19:23:23,727 - INFO -    Площадь: 61.2
+2025-05-10 19:23:23,727 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,727 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,727 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/sdaetsya_pomeschenie_svobodnogo_naznacheniya_7321968131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,727 - INFO -    Заголовок: Сдается помещение свободного назначения
+2025-05-10 19:23:23,727 - INFO -    Адрес: пр-т Хасана Туфана, 8Набережные Челны
+2025-05-10 19:23:23,734 - INFO -    Цена: 1100
+2025-05-10 19:23:23,734 - INFO -    Площадь: 103.0
+2025-05-10 19:23:23,736 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/pomescheniya_svob.nazn.203050103kv.m_4294024219?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJjNnlWbmlBSG1jczZTbVoxIjt9QrWrEj8AAAA
+2025-05-10 19:23:23,736 - INFO -    Заголовок: Помещения своб.назн.,20,30,50,103кв.м
+2025-05-10 19:23:23,736 - INFO -    Адрес: пр-т Хасана Туфана, 8Набережные Челны
+2025-05-10 19:23:23,736 - INFO -    Цена: 1100
+2025-05-10 19:23:23,736 - INFO -    Площадь: 103.0
+2025-05-10 19:23:23,736 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,736 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,736 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_65_m_7314753575?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,744 - INFO -    Адрес: ул. Горьковское Шоссе, 49к1Казань
+2025-05-10 19:23:23,744 - INFO -    Цена: 65000
+2025-05-10 19:23:23,744 - INFO -    Площадь: 65.0
+2025-05-10 19:23:23,744 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_65_m_7270885306?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,744 - INFO -    Адрес: ул. Кул Гали, 27Казань
+2025-05-10 19:23:23,752 - INFO -    Цена: 65000
+2025-05-10 19:23:23,752 - INFO -    Площадь: 65.0
+2025-05-10 19:23:23,752 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,752 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,752 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_arenda_65_7281961258?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,752 - INFO -    Заголовок: Торговая площадь аренда 65
+2025-05-10 19:23:23,752 - INFO -    Адрес: ул. Кул Гали, 27Казань
+2025-05-10 19:23:23,752 - INFO -    Цена: 65000
+2025-05-10 19:23:23,752 - INFO -    Площадь: 65.0
+2025-05-10 19:23:23,752 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_65_m_7270885306?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,760 - INFO -    Адрес: ул. Кул Гали, 27Казань
+2025-05-10 19:23:23,760 - INFO -    Цена: 65000
+2025-05-10 19:23:23,760 - INFO -    Площадь: 65.0
+2025-05-10 19:23:23,760 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,760 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,760 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdam_torgovoe_pomeschenie_12.5_m_7294385421?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,760 - INFO -    Адрес: ул. Восстания, 4Казань
+2025-05-10 19:23:23,760 - INFO -    Цена: 40000
+2025-05-10 19:23:23,768 - INFO -    Площадь: 12.5
+2025-05-10 19:23:23,768 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdam_torgovoe_pomeschenie_12.5_m_4030813150?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJjNnlWbmlBSG1jczZTbVoxIjt9QrWrEj8AAAA
+2025-05-10 19:23:23,770 - INFO -    Адрес: пр-т Ямашева, 50АКазань
+2025-05-10 19:23:23,770 - INFO -    Цена: 40000
+2025-05-10 19:23:23,770 - INFO -    Площадь: 12.5
+2025-05-10 19:23:23,770 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,770 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,770 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_20_m_7350689663?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,777 - INFO -    Адрес: ул. Четаева, 25Казань
+2025-05-10 19:23:23,777 - INFO -    Цена: 25000
+2025-05-10 19:23:23,777 - INFO -    Площадь: 20.0
+2025-05-10 19:23:23,777 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_20_m_4939715015?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:23,777 - INFO -    Адрес: 3-й комплекс, 1Набережные Челны
+2025-05-10 19:23:23,777 - INFO -    Цена: 25000
+2025-05-10 19:23:23,777 - INFO -    Площадь: 20.0
+2025-05-10 19:23:23,782 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,782 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,782 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/sdam_torgovyy_tsentr_114_m_7321634012?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJzZzBJYTBEdEszbWJIU21OIjt9PE7W5j8AAAA
+2025-05-10 19:23:23,785 - INFO -    Адрес: ул. Нариманова, 8Набережные Челны
+2025-05-10 19:23:23,785 - INFO -    Цена: 1000
+2025-05-10 19:23:23,785 - INFO -    Площадь: 114.0
+2025-05-10 19:23:23,785 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/arenda_pervaya_liniya_7301324538?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ6cnRBNXRCcHIxZlRKMTRYIjt9cVV1VD8AAAA
+2025-05-10 19:23:23,786 - INFO -    Заголовок: Аренда первая линия
+2025-05-10 19:23:23,786 - INFO -    Адрес: ул. Нариманова, 8Набережные Челны
+2025-05-10 19:23:23,786 - INFO -    Цена: 1000
+2025-05-10 19:23:23,786 - INFO -    Площадь: 114.0
+2025-05-10 19:23:23,786 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,786 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,786 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_40_m_7317088173?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmSFJBajRmcnptY3Q2ZkZmIjt9XKvySD8AAAA
+2025-05-10 19:23:23,786 - INFO -    Адрес: ул. Маршала Чуйкова, 6Казань
+2025-05-10 19:23:23,786 - INFO -    Цена: 40000
+2025-05-10 19:23:23,786 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,792 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_40_m_4528834203?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJVaVR0VHRFSUQwOERPRVZHIjt9Lub7iD8AAAA
+2025-05-10 19:23:23,794 - INFO -    Адрес: ул. Галимджана Баруди, 18Казань
+2025-05-10 19:23:23,794 - INFO -    Цена: 40000
+2025-05-10 19:23:23,794 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,794 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,794 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,794 - INFO - 1. URL: https://www.avito.ru/nurlat/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7262759080?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,794 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,794 - INFO -    Адрес: Школьная ул., 2Нурлат
+2025-05-10 19:23:23,794 - INFO -    Цена: 40000
+2025-05-10 19:23:23,794 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,794 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_30_m_3906972958?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:23,802 - INFO -    Адрес: ул. Мамадышский Тракт, 35Казань
+2025-05-10 19:23:23,803 - INFO -    Цена: 40000
+2025-05-10 19:23:23,803 - INFO -    Площадь: 40.0
+2025-05-10 19:23:23,803 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,803 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,803 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_ofis_sklad_65_m_7320773663?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmSFJBajRmcnptY3Q2ZkZmIjt9XKvySD8AAAA
+2025-05-10 19:23:23,803 - INFO -    Адрес: 3-й комплекс, 1Набережные Челны
+2025-05-10 19:23:23,803 - INFO -    Цена: 50000
+2025-05-10 19:23:23,803 - INFO -    Площадь: 65.0
+2025-05-10 19:23:23,803 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_65_m_7307411677?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmSFJBajRmcnptY3Q2ZkZmIjt9XKvySD8AAAA
+2025-05-10 19:23:23,810 - INFO -    Адрес: 3-й комплекс, 1Набережные Челны
+2025-05-10 19:23:23,810 - INFO -    Цена: 50000
+2025-05-10 19:23:23,810 - INFO -    Площадь: 65.0
+2025-05-10 19:23:23,810 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,810 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,810 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_15_m_4671645817?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:23,810 - INFO -    Адрес: Чистопольская ул., 59Казань
+2025-05-10 19:23:23,810 - INFO -    Цена: 20000
+2025-05-10 19:23:23,810 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,818 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_15_m_3629534840?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxNWNpbzZkSjZ0a3FTZkxGIjt9XP5w2z8AAAA
+2025-05-10 19:23:23,820 - INFO -    Адрес: ул. Габдуллы Тукая, 2Казань
+2025-05-10 19:23:23,820 - INFO -    Цена: 20000
+2025-05-10 19:23:23,820 - INFO -    Площадь: 15.0
+2025-05-10 19:23:23,820 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,820 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,820 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_70_m_7301275296?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ6cnRBNXRCcHIxZlRKMTRYIjt9cVV1VD8AAAA
+2025-05-10 19:23:23,826 - INFO -    Адрес: ул. Николая Ершова, 65Б/1Казань
+2025-05-10 19:23:23,826 - INFO -    Цена: 91000
+2025-05-10 19:23:23,826 - INFO -    Площадь: 70.0
+2025-05-10 19:23:23,826 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/ryadom_pvz_ozon_7203938301?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJMWE1FOUVBNkxhT1RGT1NNIjt9eadmeT8AAAA
+2025-05-10 19:23:23,835 - INFO -    Заголовок: Рядом пвз Озон
+2025-05-10 19:23:23,835 - INFO -    Адрес: ул. Николая Ершова, 65Б/1Казань
+2025-05-10 19:23:23,836 - INFO -    Цена: 91000
+2025-05-10 19:23:23,836 - INFO -    Площадь: 70.0
+2025-05-10 19:23:23,836 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,836 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,836 - INFO - 1. URL: https://www.avito.ru/zelenodolsk/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_25_m_4391780156?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:23,842 - INFO -    Адрес: ул. Ленина, 51Зеленодольск
+2025-05-10 19:23:23,842 - INFO -    Цена: 25000
+2025-05-10 19:23:23,842 - INFO -    Площадь: 25.0
+2025-05-10 19:23:23,842 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_25_m_2230995415?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,848 - INFO -    Адрес: ул. Клары Цеткин, 10Казань
+2025-05-10 19:23:23,848 - INFO -    Цена: 25000
+2025-05-10 19:23:23,848 - INFO -    Площадь: 25.0
+2025-05-10 19:23:23,848 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,850 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,850 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovoe_pomeschenie_s_otdelnym_vhodom_i_sanuzlom_3299996896?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxNWNpbzZkSjZ0a3FTZkxGIjt9XP5w2z8AAAA
+2025-05-10 19:23:23,850 - INFO -    Заголовок: Торговое помещение с отдельным входом и санузлом
+2025-05-10 19:23:23,850 - INFO -    Адрес: 2-я Юго-Западная ул., 3АКазань
+2025-05-10 19:23:23,853 - INFO -    Цена: 150000
+2025-05-10 19:23:23,853 - INFO -    Площадь: 92.5
+2025-05-10 19:23:23,854 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_s_otdelnym_vhodom_92.5_m_2948339595?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJlampMRXZYUWlXQkp4UW5JIjt9xvuXwj8AAAA
+2025-05-10 19:23:23,859 - INFO -    Адрес: 2-я Юго-Западная ул., 3АКазань
+2025-05-10 19:23:23,859 - INFO -    Цена: 150000
+2025-05-10 19:23:23,859 - INFO -    Площадь: 92.5
+2025-05-10 19:23:23,859 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,859 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,859 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/teplyy_sklad_proizvodstvennoe_pomeschenie_7321992485?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,859 - INFO -    Заголовок: Теплый склад, производственное помещение
+2025-05-10 19:23:23,859 - INFO -    Адрес: ул. Оренбургский Тракт, 130АКазань
+2025-05-10 19:23:23,859 - INFO -    Цена: 65000
+2025-05-10 19:23:23,859 - INFO -    Площадь: 100.0
+2025-05-10 19:23:23,859 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/teplyy_sklad_proizvodstvennoe_pomeschenie_7321992485?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,859 - INFO -    Заголовок: Теплый склад, производственное помещение
+2025-05-10 19:23:23,859 - INFO -    Адрес: ул. Оренбургский Тракт, 130АКазань
+2025-05-10 19:23:23,859 - INFO -    Цена: 65000
+2025-05-10 19:23:23,865 - INFO -    Площадь: 100.0
+2025-05-10 19:23:23,865 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,866 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,866 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pervaya_liniya_135.2_m_7300009318?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,870 - INFO -    Адрес: Чистопольская ул., 19АКазань
+2025-05-10 19:23:23,870 - INFO -    Цена: 243360
+2025-05-10 19:23:23,870 - INFO -    Площадь: 135.0
+2025-05-10 19:23:23,870 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pervaya_liniya_135.2_m_7300009318?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,874 - INFO -    Адрес: Чистопольская ул., 19АКазань
+2025-05-10 19:23:23,875 - INFO -    Цена: 243360
+2025-05-10 19:23:23,875 - INFO -    Площадь: 135.0
+2025-05-10 19:23:23,876 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,876 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,876 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/ofisy_s_remontom_v_sovremennom_v_biznes_tsentre_7281623940?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,876 - INFO -    Заголовок: Офисы с ремонтом в современном в Бизнес центре
+2025-05-10 19:23:23,876 - INFO -    Адрес: ул. Адоратского, 78Казань
+2025-05-10 19:23:23,876 - INFO -    Цена: 1300
+2025-05-10 19:23:23,876 - INFO -    Площадь: 18.0
+2025-05-10 19:23:23,876 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/ofisy_s_remontom_v_sovremennom_v_biznes_tsentre_7281623940?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,876 - INFO -    Заголовок: Офисы с ремонтом в современном в Бизнес центре
+2025-05-10 19:23:23,876 - INFO -    Адрес: ул. Адоратского, 78Казань
+2025-05-10 19:23:23,876 - INFO -    Цена: 1300
+2025-05-10 19:23:23,876 - INFO -    Площадь: 18.0
+2025-05-10 19:23:23,876 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,876 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,876 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_75_m_7306419339?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,886 - INFO -    Адрес: ул. Четаева, 35Казань
+2025-05-10 19:23:23,886 - INFO -    Цена: 150000
+2025-05-10 19:23:23,886 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,886 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_75_m_7306419339?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,886 - INFO -    Адрес: ул. Четаева, 35Казань
+2025-05-10 19:23:23,886 - INFO -    Цена: 150000
+2025-05-10 19:23:23,886 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,886 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,886 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,894 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_75_m_7306419339?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,894 - INFO -    Адрес: ул. Четаева, 35Казань
+2025-05-10 19:23:23,894 - INFO -    Цена: 150000
+2025-05-10 19:23:23,894 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,894 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_75_m_1922631356?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,894 - INFO -    Адрес: Залесная ул., 72АКазань
+2025-05-10 19:23:23,902 - INFO -    Цена: 150000
+2025-05-10 19:23:23,902 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,903 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,903 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,903 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_75_m_7306419339?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,903 - INFO -    Адрес: ул. Четаева, 35Казань
+2025-05-10 19:23:23,903 - INFO -    Цена: 150000
+2025-05-10 19:23:23,903 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,903 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_75_m_1922631356?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJyeUNPN0dGSUU4cUtjNHRZIjt9ugcw1T8AAAA
+2025-05-10 19:23:23,911 - INFO -    Адрес: Залесная ул., 72АКазань
+2025-05-10 19:23:23,911 - INFO -    Цена: 150000
+2025-05-10 19:23:23,911 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,911 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,911 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,911 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7282111306?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,911 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,911 - INFO -    Адрес: ул. Лейтенанта Шмидта, 1Казань
+2025-05-10 19:23:23,911 - INFO -    Цена: 79990
+2025-05-10 19:23:23,911 - INFO -    Площадь: 51.0
+2025-05-10 19:23:23,915 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7282111306?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,915 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,915 - INFO -    Адрес: ул. Лейтенанта Шмидта, 1Казань
+2025-05-10 19:23:23,915 - INFO -    Цена: 79990
+2025-05-10 19:23:23,915 - INFO -    Площадь: 51.0
+2025-05-10 19:23:23,915 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,915 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,915 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdam_torgovoe_pomeschenie_107.3_m_7315689952?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,920 - INFO -    Адрес: ул. Гаврилова, 56к2Казань
+2025-05-10 19:23:23,920 - INFO -    Цена: 107000
+2025-05-10 19:23:23,920 - INFO -    Площадь: 107.3
+2025-05-10 19:23:23,920 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdam_torgovoe_pomeschenie_107.3_m_7315689952?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,920 - INFO -    Адрес: ул. Гаврилова, 56к2Казань
+2025-05-10 19:23:23,928 - INFO -    Цена: 107000
+2025-05-10 19:23:23,928 - INFO -    Площадь: 107.3
+2025-05-10 19:23:23,928 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,928 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,928 - INFO - 1. URL: https://www.avito.ru/bolshaya_atnya/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7280445824?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,928 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,928 - INFO -    Адрес: ул. Карла Маркса, 24с. Большая Атня
+2025-05-10 19:23:23,928 - INFO -    Цена: 500
+2025-05-10 19:23:23,928 - INFO -    Площадь: 66.0
+2025-05-10 19:23:23,928 - INFO - 
+2. URL: https://www.avito.ru/bolshaya_atnya/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7280445824?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,928 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,928 - INFO -    Адрес: ул. Карла Маркса, 24с. Большая Атня
+2025-05-10 19:23:23,928 - INFO -    Цена: 500
+2025-05-10 19:23:23,928 - INFO -    Площадь: 66.0
+2025-05-10 19:23:23,928 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,928 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,928 - INFO - 1. URL: https://www.avito.ru/zelenodolsk/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_108_m_7324967784?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,937 - INFO -    Адрес: ул. Королёва, 12БЗеленодольск
+2025-05-10 19:23:23,937 - INFO -    Цена: 200000
+2025-05-10 19:23:23,937 - INFO -    Площадь: 108.0
+2025-05-10 19:23:23,937 - INFO - 
+2. URL: https://www.avito.ru/zelenodolsk/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_108_m_7324967784?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,937 - INFO -    Адрес: ул. Королёва, 12БЗеленодольск
+2025-05-10 19:23:23,937 - INFO -    Цена: 200000
+2025-05-10 19:23:23,937 - INFO -    Площадь: 108.0
+2025-05-10 19:23:23,937 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,937 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,937 - INFO - 1. URL: https://www.avito.ru/osinovo/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7281870540?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3RVZVb1ZGaVE2WVZYT2tMIjt98QzeCj8AAAA
+2025-05-10 19:23:23,937 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,937 - INFO -    Адрес: ул. Марата Ахметшина, 3с. Осиново
+2025-05-10 19:23:23,937 - INFO -    Цена: 54230
+2025-05-10 19:23:23,937 - INFO -    Площадь: 63.8
+2025-05-10 19:23:23,937 - INFO - 
+2. URL: https://www.avito.ru/osinovo/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7281870540?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,937 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,937 - INFO -    Адрес: ул. Марата Ахметшина, 3с. Осиново
+2025-05-10 19:23:23,937 - INFO -    Цена: 54230
+2025-05-10 19:23:23,937 - INFO -    Площадь: 63.8
+2025-05-10 19:23:23,937 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,937 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,937 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_128.6_m_7262779360?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,952 - INFO -    Адрес: Московский пр-т, 35Набережные Челны
+2025-05-10 19:23:23,953 - INFO -    Цена: 1500
+2025-05-10 19:23:23,954 - INFO -    Площадь: 128.6
+2025-05-10 19:23:23,954 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/arenda_svobodnogo_naznacheniya_128.6_m_4395977200?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJjNnlWbmlBSG1jczZTbVoxIjt9QrWrEj8AAAA
+2025-05-10 19:23:23,954 - INFO -    Адрес: Московский пр-т, 35Набережные Челны
+2025-05-10 19:23:23,954 - INFO -    Цена: 1500
+2025-05-10 19:23:23,954 - INFO -    Площадь: 128.6
+2025-05-10 19:23:23,954 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,954 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,954 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7281405023?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,954 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,954 - INFO -    Адрес: Советский район, посёлок Дербышки, Советская ул., 22АКазань
+2025-05-10 19:23:23,954 - INFO -    Цена: 55000
+2025-05-10 19:23:23,954 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,954 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_75_m_2756333036?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJlampMRXZYUWlXQkp4UW5JIjt9xvuXwj8AAAA
+2025-05-10 19:23:23,964 - INFO -    Адрес: Советский район, посёлок Дербышки, Советская ул., 22АКазань
+2025-05-10 19:23:23,964 - INFO -    Цена: 55000
+2025-05-10 19:23:23,964 - INFO -    Площадь: 75.0
+2025-05-10 19:23:23,967 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,967 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,968 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_51_m_7274551868?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJIMFFZZ05vNXk2blJCdGc4Ijt9P_qucj8AAAA
+2025-05-10 19:23:23,971 - INFO -    Адрес: Ленинградская ул., 45АКазань
+2025-05-10 19:23:23,971 - INFO -    Цена: 100000
+2025-05-10 19:23:23,971 - INFO -    Площадь: 51.0
+2025-05-10 19:23:23,971 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_51_m_7274551868?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,971 - INFO -    Адрес: Ленинградская ул., 45АКазань
+2025-05-10 19:23:23,971 - INFO -    Цена: 100000
+2025-05-10 19:23:23,971 - INFO -    Площадь: 51.0
+2025-05-10 19:23:23,971 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,971 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,971 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pomeschenie_svobodnogo_naznacheniya_148_kv.m_7271795784?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,971 - INFO -    Заголовок: Помещение свободного назначения 148 кв.м
+2025-05-10 19:23:23,971 - INFO -    Адрес: ул. Рихарда Зорге, 81Ак1Казань
+2025-05-10 19:23:23,971 - INFO -    Цена: 296000
+2025-05-10 19:23:23,971 - INFO -    Площадь: 148.0
+2025-05-10 19:23:23,971 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/zdanie_7289443937?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,980 - INFO -    Заголовок: Здание
+2025-05-10 19:23:23,980 - INFO -    Адрес: ул. Рихарда Зорге, 81Ак1Казань
+2025-05-10 19:23:23,980 - INFO -    Цена: 296000
+2025-05-10 19:23:23,980 - INFO -    Площадь: 148.0
+2025-05-10 19:23:23,980 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,980 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,980 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pavilon_na_ostanovke_20-40_m_7271688571?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWc2xZY1lPZXZjMFZSZTJIIjt9ARBXTj8AAAA
+2025-05-10 19:23:23,986 - INFO -    Адрес: Ломжинская ул., 17/1Казань
+2025-05-10 19:23:23,986 - INFO -    Цена: 50000
+2025-05-10 19:23:23,987 - INFO -    Площадь: 20.0
+2025-05-10 19:23:23,987 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/pavilon_na_ostanovke_20-40_m_4007881770?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJjNnlWbmlBSG1jczZTbVoxIjt9QrWrEj8AAAA
+2025-05-10 19:23:23,987 - INFO -    Адрес: Ломжинская ул., 17/1Казань
+2025-05-10 19:23:23,987 - INFO -    Цена: 50000
+2025-05-10 19:23:23,987 - INFO -    Площадь: 20.0
+2025-05-10 19:23:23,987 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,987 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,987 - INFO - 1. URL: https://www.avito.ru/chistopol/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7233357137?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJLYUt2R3ZpSUZveGVRU3RJIjt9aSHekT8AAAA
+2025-05-10 19:23:23,987 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:23,987 - INFO -    Адрес: ул. Энгельса, 94Чистополь
+2025-05-10 19:23:23,987 - INFO -    Цена: 15000
+2025-05-10 19:23:23,987 - INFO -    Площадь: 12.0
+2025-05-10 19:23:23,995 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_12_m_2377638834?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJlampMRXZYUWlXQkp4UW5JIjt9xvuXwj8AAAA
+2025-05-10 19:23:23,998 - INFO -    Адрес: ул. Рихарда Зорге, 93Казань
+2025-05-10 19:23:23,998 - INFO -    Цена: 15000
+2025-05-10 19:23:23,998 - INFO -    Площадь: 12.0
+2025-05-10 19:23:23,998 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:23,998 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:23,998 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/otdelnostoyaschee_pomeschenie_80m_7239808511?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJLYUt2R3ZpSUZveGVRU3RJIjt9aSHekT8AAAA
+2025-05-10 19:23:24,002 - INFO -    Адрес: ул. Побежимова, 28Казань
+2025-05-10 19:23:24,003 - INFO -    Цена: 120000
+2025-05-10 19:23:24,004 - INFO -    Площадь: 80.0
+2025-05-10 19:23:24,004 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdayu_otdelnostoyaschee_pomeschenie_80m_4360024917?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJVaVR0VHRFSUQwOERPRVZHIjt9Lub7iD8AAAA
+2025-05-10 19:23:24,004 - INFO -    Заголовок: Сдаю отдельностоящее помещение 80м
+2025-05-10 19:23:24,004 - INFO -    Адрес: ул. Батыршина, 20БКазань
+2025-05-10 19:23:24,004 - INFO -    Цена: 120000
+2025-05-10 19:23:24,004 - INFO -    Площадь: 80.0
+2025-05-10 19:23:24,004 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,004 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,004 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_1_etazh_54_kv.m_7245519854?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJLYUt2R3ZpSUZveGVRU3RJIjt9aSHekT8AAAA
+2025-05-10 19:23:24,004 - INFO -    Заголовок: Торговая площадь 1 этаж, 54 кв.м
+2025-05-10 19:23:24,004 - INFO -    Адрес: Петербургская ул., 9Казань
+2025-05-10 19:23:24,004 - INFO -    Цена: 85000
+2025-05-10 19:23:24,004 - INFO -    Площадь: 54.0
+2025-05-10 19:23:24,004 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_54_m_4718439767?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:24,018 - INFO -    Адрес: Петербургская ул., 9Казань
+2025-05-10 19:23:24,019 - INFO -    Цена: 85000
+2025-05-10 19:23:24,019 - INFO -    Площадь: 54.0
+2025-05-10 19:23:24,019 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,019 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,019 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_7243669391?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJLYUt2R3ZpSUZveGVRU3RJIjt9aSHekT8AAAA
+2025-05-10 19:23:24,019 - INFO -    Заголовок: Свободного назначения
+2025-05-10 19:23:24,019 - INFO -    Адрес: Старосармановская ул., 19/6Набережные Челны
+2025-05-10 19:23:24,019 - INFO -    Цена: 600
+2025-05-10 19:23:24,019 - INFO -    Площадь: 129.0
+2025-05-10 19:23:24,019 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/sklad_129_m2_7256606734?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJLYUt2R3ZpSUZveGVRU3RJIjt9aSHekT8AAAA
+2025-05-10 19:23:24,019 - INFO -    Заголовок: Склад 129 м2
+2025-05-10 19:23:24,019 - INFO -    Адрес: Старосармановская ул., 19/6Набережные Челны
+2025-05-10 19:23:24,019 - INFO -    Цена: 600
+2025-05-10 19:23:24,026 - INFO -    Площадь: 129.0
+2025-05-10 19:23:24,026 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,026 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,026 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/psn_na_pervoy_linii_v_tsentre_4696703251?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJMWE1FOUVBNkxhT1RGT1NNIjt9eadmeT8AAAA
+2025-05-10 19:23:24,026 - INFO -    Заголовок: ПСН на первой линии в центре
+2025-05-10 19:23:24,026 - INFO -    Адрес: ул. Чернышевского, 28Казань
+2025-05-10 19:23:24,026 - INFO -    Цена: 267500
+2025-05-10 19:23:24,026 - INFO -    Площадь: 107.0
+2025-05-10 19:23:24,026 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdaetsya_pomeschenie_v_tsentre_na_chernyshevskogo_107m2_4632535270?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:24,026 - INFO -    Заголовок: Сдается помещение в центре на Чернышевского, 107м2
+2025-05-10 19:23:24,026 - INFO -    Адрес: ул. Чернышевского, 28Казань
+2025-05-10 19:23:24,026 - INFO -    Цена: 267500
+2025-05-10 19:23:24,026 - INFO -    Площадь: 107.0
+2025-05-10 19:23:24,026 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,026 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,026 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/super_trafik_110kv.m_4664804384?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:24,026 - INFO -    Заголовок: Супер трафик 110кв.м
+2025-05-10 19:23:24,026 - INFO -    Адрес: ул. Декабристов, 127Казань
+2025-05-10 19:23:24,034 - INFO -    Цена: 182655
+2025-05-10 19:23:24,034 - INFO -    Площадь: 110.7
+2025-05-10 19:23:24,034 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnoe_naznachenie_dekabristov_ul._127_4024599902?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:24,034 - INFO -    Заголовок: Свободное назначение, Декабристов ул., 127
+2025-05-10 19:23:24,034 - INFO -    Адрес: ул. Декабристов, 127Казань
+2025-05-10 19:23:24,034 - INFO -    Цена: 182655
+2025-05-10 19:23:24,034 - INFO -    Площадь: 110.7
+2025-05-10 19:23:24,034 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,034 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,034 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_100_m_4636057970?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:24,042 - INFO -    Адрес: Беломорская ул., 69Ак1Казань
+2025-05-10 19:23:24,042 - INFO -    Цена: 1500
+2025-05-10 19:23:24,042 - INFO -    Площадь: 100.0
+2025-05-10 19:23:24,042 - INFO - 
+2. URL: https://www.avito.ru/zelenodolsk/kommercheskaya_nedvizhimost/torgovaya_ploschad_100_m_3441027430?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxNWNpbzZkSjZ0a3FTZkxGIjt9XP5w2z8AAAA
+2025-05-10 19:23:24,042 - INFO -    Адрес: ул. Хасанова, 50Зеленодольск
+2025-05-10 19:23:24,042 - INFO -    Цена: 1500
+2025-05-10 19:23:24,042 - INFO -    Площадь: 100.0
+2025-05-10 19:23:24,042 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,042 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,042 - INFO - 1. URL: https://www.avito.ru/osinovo/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_65.8_m_4654950809?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJRbFBmbU9NQXRieGlpOXoxIjt93U9QJj8AAAA
+2025-05-10 19:23:24,050 - INFO -    Адрес: ул. Марата Ахметшина, 4с. Осиново
+2025-05-10 19:23:24,050 - INFO -    Цена: 900
+2025-05-10 19:23:24,050 - INFO -    Площадь: 65.8
+2025-05-10 19:23:24,050 - INFO - 
+2. URL: https://www.avito.ru/osinovo/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_65.8_m_3854850031?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:24,050 - INFO -    Адрес: ул. Марата Ахметшина, 4с. Осиново
+2025-05-10 19:23:24,058 - INFO -    Цена: 900
+2025-05-10 19:23:24,058 - INFO -    Площадь: 65.8
+2025-05-10 19:23:24,058 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,058 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,058 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/65_m_na_trafike_u_metro_4792105051?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:24,063 - INFO -    Адрес: ул. Декабристов, 184Казань
+2025-05-10 19:23:24,063 - INFO -    Цена: 130000
+2025-05-10 19:23:24,064 - INFO -    Площадь: 65.0
+2025-05-10 19:23:24,064 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sdaetsya_pomeschenie_na_ul._dekabristov_d.184_65_m2_4377229899?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmOWJHRlJRc1BKUE5vZEIyIjt9afBC3D8AAAA
+2025-05-10 19:23:24,064 - INFO -    Заголовок: Сдается помещение на ул. Декабристов д.184, 65 м2
+2025-05-10 19:23:24,064 - INFO -    Адрес: ул. Декабристов, 184Казань
+2025-05-10 19:23:24,064 - INFO -    Цена: 130000
+2025-05-10 19:23:24,064 - INFO -    Площадь: 65.0
+2025-05-10 19:23:24,064 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,064 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,067 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/v_tk_savinovo_torgovoe_na_1_etazhe_po_25_m_4685545385?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJwUzlzbExPVk90M3pTTzI3Ijt98EhPEj8AAAA
+2025-05-10 19:23:24,067 - INFO -    Заголовок: В ТК "Савиново", торговое на 1 этаже по 25 м
+2025-05-10 19:23:24,067 - INFO -    Адрес: пр-т Ямашева, 93Казань
+2025-05-10 19:23:24,067 - INFO -    Цена: 50000
+2025-05-10 19:23:24,067 - INFO -    Площадь: 25.0
+2025-05-10 19:23:24,069 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_25_m_4579720677?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4eGZWZmdvWUJvUFdCTW1sIjt9jQZcRz8AAAA
+2025-05-10 19:23:24,069 - INFO -    Адрес: пр-т Ямашева, 93Казань
+2025-05-10 19:23:24,069 - INFO -    Цена: 50000
+2025-05-10 19:23:24,069 - INFO -    Площадь: 25.0
+2025-05-10 19:23:24,069 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,069 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,069 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_10_m_4608003980?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJVaVR0VHRFSUQwOERPRVZHIjt9Lub7iD8AAAA
+2025-05-10 19:23:24,075 - INFO -    Адрес: ул. Маршала Чуйкова, 4Казань
+2025-05-10 19:23:24,075 - INFO -    Цена: 35000
+2025-05-10 19:23:24,075 - INFO -    Площадь: 10.0
+2025-05-10 19:23:24,075 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_10_m_3950164803?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:24,075 - INFO -    Адрес: Ленинградская ул., 27Казань
+2025-05-10 19:23:24,075 - INFO -    Цена: 35000
+2025-05-10 19:23:24,075 - INFO -    Площадь: 10.0
+2025-05-10 19:23:24,075 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,075 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,075 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/torgovaya_ploschad_107_kv._m_4536974919?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJVaVR0VHRFSUQwOERPRVZHIjt9Lub7iD8AAAA
+2025-05-10 19:23:24,083 - INFO -    Заголовок: Торговая площадь, 107 кв. м
+2025-05-10 19:23:24,083 - INFO -    Адрес: ул. Гаврилова, 56к2Казань
+2025-05-10 19:23:24,083 - INFO -    Цена: 107000
+2025-05-10 19:23:24,083 - INFO -    Площадь: 107.0
+2025-05-10 19:23:24,083 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_107_m_1487199550?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3cThlWE11NWdSNmNqT0JCIjt9hlJyCT8AAAA
+2025-05-10 19:23:24,088 - INFO -    Адрес: ул. Гаврилова, 56к2Казань
+2025-05-10 19:23:24,091 - INFO -    Цена: 107000
+2025-05-10 19:23:24,091 - INFO -    Площадь: 107.0
+2025-05-10 19:23:24,091 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,091 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,091 - INFO - 1. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/torgovaya_ot_60_do_127_m_4664203293?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4eGZWZmdvWUJvUFdCTW1sIjt9jQZcRz8AAAA
+2025-05-10 19:23:24,091 - INFO -    Адрес: Набережночелнинский пр-т, 70/56Набережные Челны
+2025-05-10 19:23:24,091 - INFO -    Цена: 1000
+2025-05-10 19:23:24,091 - INFO -    Площадь: 1.0
+2025-05-10 19:23:24,091 - INFO - 
+2. URL: https://www.avito.ru/naberezhnye_chelny/kommercheskaya_nedvizhimost/torgovaya_ot_70_do_1000_m_4663902651?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4eGZWZmdvWUJvUFdCTW1sIjt9jQZcRz8AAAA
+2025-05-10 19:23:24,099 - INFO -    Адрес: пр-т Абдурахмана Абсалямова, 14Набережные Челны
+2025-05-10 19:23:24,099 - INFO -    Цена: 1000
+2025-05-10 19:23:24,099 - INFO -    Площадь: 1.0
+2025-05-10 19:23:24,099 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,099 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,099 - INFO - 1. URL: https://www.avito.ru/elabuga/kommercheskaya_nedvizhimost/torgovaya_ploschad_20_m_4713908907?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4eGZWZmdvWUJvUFdCTW1sIjt9jQZcRz8AAAA
+2025-05-10 19:23:24,099 - INFO -    Адрес: пр-т Нефтяников, 10Ас1Елабуга
+2025-05-10 19:23:24,099 - INFO -    Цена: 1500
+2025-05-10 19:23:24,099 - INFO -    Площадь: 20.0
+2025-05-10 19:23:24,107 - INFO - 
+2. URL: https://www.avito.ru/almetevsk/kommercheskaya_nedvizhimost/torgovaya_ploschad_20_m_2415211714?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJlampMRXZYUWlXQkp4UW5JIjt9xvuXwj8AAAA
+2025-05-10 19:23:24,107 - INFO -    Адрес: ул. Гафиатуллина, 20Альметьевск
+2025-05-10 19:23:24,107 - INFO -    Цена: 1499
+2025-05-10 19:23:24,107 - INFO -    Площадь: 20.0
+2025-05-10 19:23:24,107 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,107 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,107 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/arenda_pomeschenie_svobodnogo_naznacheniya_121.1_m_4264387989?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4eGZWZmdvWUJvUFdCTW1sIjt9jQZcRz8AAAA
+2025-05-10 19:23:24,107 - INFO -    Адрес: Танковая ул., 2Казань
+2025-05-10 19:23:24,107 - INFO -    Цена: 207150
+2025-05-10 19:23:24,115 - INFO -    Площадь: 138.1
+2025-05-10 19:23:24,115 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/svobodnogo_naznacheniya_138.1_m_4652341198?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJmOWJHRlJRc1BKUE5vZEIyIjt9afBC3D8AAAA
+2025-05-10 19:23:24,115 - INFO -    Адрес: Танковая ул., 2Казань
+2025-05-10 19:23:24,115 - INFO -    Цена: 207150
+2025-05-10 19:23:24,115 - INFO -    Площадь: 138.1
+2025-05-10 19:23:24,115 - INFO - --------------------------------------------------------------------------------
+2025-05-10 19:23:24,115 - INFO - 
+Пара дубликатов:
+2025-05-10 19:23:24,115 - INFO - 1. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sklad_30_m_3901291797?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:24,123 - INFO -    Адрес: Московская ул., 52Казань
+2025-05-10 19:23:24,123 - INFO -    Цена: 10000
+2025-05-10 19:23:24,123 - INFO -    Площадь: 30.0
+2025-05-10 19:23:24,123 - INFO - 
+2. URL: https://www.avito.ru/kazan/kommercheskaya_nedvizhimost/sklad_30_m_3787078968?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJTQzRqR2M1R1d5Rll6amd3Ijt9JSWuAD8AAAA
+2025-05-10 19:23:24,123 - INFO -    Адрес: Московская ул., 52Казань
+2025-05-10 19:23:24,123 - INFO -    Цена: 10000
+2025-05-10 19:23:24,123 - INFO -    Площадь: 30.0
+2025-05-10 19:23:24,123 - INFO - --------------------------------------------------------------------------------

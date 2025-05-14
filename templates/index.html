@@ -1,72 +1,111 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <title>Анализ ПВЗ</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            height: 100vh; /* Занимает всю высоту окна */
-        }
-        #map {
-            flex: 1; /* Занимает всё доступное пространство */
-            width: 100%; /* Ширина карты */
-        }
-        .point-list {
-            max-width: 800px; /* Максимальная ширина блока с объявлениями */
-            margin: 20px auto; /* Центрирование блока */
-            overflow-y: auto; /* Прокрутка, если контент превышает высоту */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-    <script src="https://api-maps.yandex.ru/v3/?apikey=fe820deb-e2dd-4c8b-9f35-2978a3b4cbec&lang=ru_RU"></script>
-    <script>
-        initMap();
+{% extends "base.html" %}
 
-        async function initMap() {
-            await ymaps3.ready;
+{% block content %}
+<div class="container">
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">Умный анализ недвижимости в Татарстане</h1>
+            <p class="lead mb-4">Используйте передовые технологии анализа данных для принятия обоснованных решений при инвестировании в недвижимость.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop" alt="Анализ недвижимости" class="img-fluid rounded shadow">
+        </div>
+    </div>
 
-            const { YMap, YMapDefaultSchemeLayer } = ymaps3;
-
-            const map = new YMap(
-                document.getElementById('map'),
-                {
-                    location: {
-                        center: [49.073303, 55.7955015],
-                        zoom: 10
-                    }
-                }
-            );
-
-            map.addChild(new YMapDefaultSchemeLayer());
-        }
-    </script>
-</head>
-<body>
-    <h1 style="text-align: center;">Анализ мест для ПВЗ</h1>
-    <div id="map"></div>
-    <div class="point-list">
-        {% for point in points %}
-        <div class="point-card">
-            <h3>{{ point.address }}</h3>
-            <p>Конкуренты: {{ point.competitors }}</p>
-            <a href="/analyze/{{ point.id }}">Подробнее</a>
+    <!-- Секция с городами -->
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Выберите город для анализа</h2>
+        </div>
+        {% for slug, name in cities.items() %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bx bx-building-house display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">{{ name }}</h5>
+                    <p class="card-text">Анализ рынка недвижимости в {{ name }}.</p>
+                    <a href="{{ url_for('city_view', city_slug=slug) }}" class="btn btn-primary">
+                        Перейти к анализу
+                    </a>
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>
-</body>
-</html>
-</html>
+
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Наши возможности</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <i class="bx bx-line-chart display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">Рыночный анализ</h5>
+                    <p class="card-text">Актуальные данные о ценах, трендах и перспективных районах Татарстана.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <i class="bx bx-map-alt display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">Геопространственный анализ</h5>
+                    <p class="card-text">Визуализация данных на карте для оценки привлекательности районов.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <i class="bx bx-building display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">Оценка объектов</h5>
+                    <p class="card-text">Детальный анализ отдельных объектов недвижимости и их инвестиционного потенциала.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h2 class="mb-4">Как это работает</h2>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                    <i class="bx bx-search text-white display-6"></i>
+                </div>
+                <h5>Выберите город</h5>
+                <p class="text-muted">Укажите интересующий вас город Татарстана</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                    <i class="bx bx-slider text-white display-6"></i>
+                </div>
+                <h5>Изучите кластеры</h5>
+                <p class="text-muted">Анализируйте районы и их характеристики</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                    <i class="bx bx-chart text-white display-6"></i>
+                </div>
+                <h5>Найдите предложения</h5>
+                <p class="text-muted">Выберите лучшие объекты в каждом кластере</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                    <i class="bx bx-bulb text-white display-6"></i>
+                </div>
+                <h5>Примите решение</h5>
+                <p class="text-muted">Используйте данные для инвестиций</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

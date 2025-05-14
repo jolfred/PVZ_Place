@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}{{ city_name }} - Анализ недвижимости{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Главная</a></li>
+                    <li class="breadcrumb-item active">{{ city_name }}</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 mb-4">{{ city_name }}: анализ рынка недвижимости</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Левая колонка с картой и статистикой -->
+        <div class="col-lg-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Карта кластеров недвижимости</h5>
+                    <div id="cityMap" style="height: 600px;"></div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Статистика по городу</h5>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="stats-card text-center p-3">
+                                <div class="stats-number" id="avgPrice">-</div>
+                                <div class="stats-label">Средняя цена</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stats-card text-center p-3">
+                                <div class="stats-number" id="pricePerM2">-</div>
+                                <div class="stats-label">Цена за м²</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stats-card text-center p-3">
+                                <div class="stats-number" id="totalObjects">-</div>
+                                <div class="stats-label">Объектов</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="stats-card text-center p-3">
+                                <div class="stats-number" id="priceTrend">-</div>
+                                <div class="stats-label">Тренд цен</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="priceChart" class="mt-4" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правая колонка с кластерами и предложениями -->
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Кластеры недвижимости</h5>
+                    <div id="clustersList"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Лучшие предложения</h5>
+                    <div id="opportunitiesList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно с деталями объекта -->
+<div class="modal fade" id="propertyModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://api-maps.yandex.ru/v3/?apikey={{ config.YANDEX_MAPS_API_KEY }}&lang=ru_RU"></script>
+<script src="{{ url_for('static', filename='js/city.js') }}"></script>
+<script>
+    // Инициализация страницы города
+    document.addEventListener('DOMContentLoaded', function() {
+        initCityPage('{{ city_slug }}', '{{ city_name }}');
+    });
+</script>
+{% endblock %} 

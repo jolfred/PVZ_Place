@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="mb-4">Анализ рынка недвижимости</h2>
+            <div class="card">
+                <div class="card-body">
+                    <form id="analysisForm" class="row g-3">
+                        <div class="col-md-4">
+                            <label for="district" class="form-label">Район</label>
+                            <select class="form-select" id="district" required>
+                                <option value="">Выберите район</option>
+                                <option value="vakhitovsky">Вахитовский</option>
+                                <option value="sovetsky">Советский</option>
+                                <option value="privolzhsky">Приволжский</option>
+                                <option value="novo-savinovsky">Ново-Савиновский</option>
+                                <option value="moskovsky">Московский</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="propertyType" class="form-label">Тип недвижимости</label>
+                            <select class="form-select" id="propertyType" required>
+                                <option value="">Выберите тип</option>
+                                <option value="apartment">Квартира</option>
+                                <option value="house">Дом</option>
+                                <option value="commercial">Коммерческая недвижимость</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="budget" class="form-label">Бюджет (₽)</label>
+                            <input type="number" class="form-control" id="budget" placeholder="Введите сумму" required>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Анализировать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Тепловая карта цен</h5>
+                    <div id="priceHeatmap" style="height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Статистика рынка</h5>
+                    <div id="marketStats" style="height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Инвестиционные возможности</h5>
+                    <div id="investmentOpportunities"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('analysisForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const district = document.getElementById('district').value;
+    const propertyType = document.getElementById('propertyType').value;
+    const budget = document.getElementById('budget').value;
+
+    try {
+        // Загрузка тепловой карты цен
+        const heatmapResponse = await fetch('/api/price_heatmap');
+        const heatmapData = await heatmapResponse.json();
+        Plotly.newPlot('priceHeatmap', heatmapData);
+
+        // Загрузка статистики рынка
+        const statsResponse = await fetch('/api/market_overview');
+        const statsData = await statsResponse.json();
+        Plotly.newPlot('marketStats', statsData);
+
+        // Загрузка инвестиционных возможностей
+        const opportunitiesResponse = await fetch('/api/investment_opportunities');
+        const opportunitiesData = await opportunitiesResponse.json();
+        
+        // Отображение инвестиционных возможностей
+        const opportunitiesHtml = opportunitiesData.map(opportunity => `
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h6 class="card-title">${opportunity.address}</h6>
+                    <p class="card-text">
+                        <strong>Цена:</strong> ${opportunity.price.toLocaleString()} ₽<br>
+                        <strong>Потенциальная доходность:</strong> ${opportunity.roi}%<br>
+                        <strong>Рейтинг района:</strong> ${opportunity.areaRating}/10
+                    </p>
+                    <button class="btn btn-sm btn-outline-primary" onclick="analyzeProperty(${opportunity.id})">
+                        Подробный анализ
+                    </button>
+                </div>
+            </div>
+        `).join('');
+        
+        document.getElementById('investmentOpportunities').innerHTML = opportunitiesHtml;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        alert('Произошла ошибка при загрузке данных');
+    }
+});
+
+async function analyzeProperty(propertyId) {
+    try {
+        const response = await fetch('/api/property_analysis', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ propertyId })
+        });
+        const analysisData = await response.json();
+        
+        // Отображение модального окна с анализом
+        // TODO: Добавить модальное окно с детальным анализом
+    } catch (error) {
+        console.error('Error analyzing property:', error);
+        alert('Произошла ошибка при анализе объекта');
+    }
+}
+</script>
+{% endblock %} 

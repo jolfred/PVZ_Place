@@ -1,0 +1,9 @@
+Total Properties: 1087
+Average Price: 51107.008279668815
+Median Price: 26250.0
+Average Price per Square Meter: 1038.6332436634443
+Median Price per Square Meter: 845.6659619450318
+Average Area: 63.75196872125115
+Median Area: 60.0
+Most Common Property Type: жилой дом
+Most Common Location:  1Казань
